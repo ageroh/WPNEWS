@@ -1,0 +1,14 @@
+.ui-widget {
+   font-family: sans-serif,Arial,Verdana;
+   font-size: 12px;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+   font-family: sans-serif,Arial,Verdana;
+   font-size: 12px;
+}
+
+.ace_editor {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

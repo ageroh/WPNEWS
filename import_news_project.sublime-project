@@ -1,0 +1,39 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\templates"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\cache"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\fields"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\fonts"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\functions"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\lib"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel\\modules"
+		}
+	],
+
+	"settings": {
+        "xdebug": {
+             "url": "http://test.pos.gr:8085/",
+        }
+    }
+}

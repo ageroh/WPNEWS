@@ -1,0 +1,11 @@
+.navmenuImportant{width: 100%;}
+.navmenuImportant ul {margin: 0;padding: 0;list-style-type: none;list-style-image: none;}
+.navmenuImportant li {display: inline; }
+.navmenuImportant ul li a {text-decoration:none; margin: 4px;padding: 5px 20px 5px 20px;color: blue;background: red;}
+.navmenuImportant ul li a:hover {color: purple;background: yellow;}
+
+.slider_wrapper .main_post_full .read_full, .slider_wrapper .main_post .read_full,h5.header_line,.more_story_title,.post_previous_content h6, .post_next_content h6,h5.share_label,#page_caption h1{text-transform:none;}/*NO CAPITAL*/
+
+.post_inner_wrapper p{font-size:1.3em}/*Article font size*/
+
+
