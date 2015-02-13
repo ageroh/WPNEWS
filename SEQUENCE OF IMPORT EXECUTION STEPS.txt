@@ -1,0 +1,21 @@
+SEQUENCE OF IMPORT EXECUTION STEPS
+===================================
+
+1. truncate tables:  wp_terms; wp_term_taxonomy; wp_posts; wp_postmeta; wp_term_relationships; wp_post_relationships;
+
+2. Run SQL script (import all Tags-Categories) : news-migration-Articles
+
+3. Run php : (import all Articles - related Categories ) http://test.pos.gr:8085/news_import_posts.php
+
+4. Run php : (relate Article with Tags ) http://test.pos.gr:8085/news_import_posts.php
+
+5. Run SQL script (import Article details: subtitle, lead, ribbon) news-migration-Articles-subtitle-ribon-lead.sql
+
+6. Run php : (import All thumbnails for Articles ) http://test.pos.gr:8085/news_import_photos_v2.php
+
+6.1: Fix all templates features, theme settings
+
+6.2: Backup Database! 
+
+
+

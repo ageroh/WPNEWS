@@ -4,7 +4,7 @@ Donate link: https://mc4wp.com/
 Tags: MailChimp,newsletter,optin,mailinglist,sign-up form,subscribe,form,shortcode,widget,checkbox,comment,buddypress,multisite,bbpress,woocommerce,easy digital downloads,contact form,contact form 7,events manager,comment form,registration form,captcha
 Requires at least: 3.7
 Tested up to: 4.1.1
-Stable tag: 2.2.4
+Stable tag: 2.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -114,7 +114,6 @@ If you like the plugin, [get the Pro version of MailChimp for WordPress](https:/
 
 == Frequently Asked Questions ==
 
-
 > **What are the main differences between Pro and Lite?**<br />
 >
 > MailChimp for WordPress Pro comes with some additional features.<br />
@@ -141,13 +140,20 @@ if( function_exists( 'mc4wp_form' ) ) {
 }
 `
 
+= I am getting spam sign-ups =
+
+To prevent bots from subscribing, you can take the following anti-spam measures.
+
+- Enable double opt-in in the plugin settings.
+- Install the [Goodbye Captcha](https://wordpress.org/plugins/goodbye-captcha/) plugin.
+
 = Oops. Something went wrong. =
 `Admin notice: FNAME must be provided - Please enter a value`
 
 Your selected MailChimp list requires a field named **FNAME**. Either go into your MailChimp list settings and make the FNAME field optional or add it to your form (using the *Add MailChimp field** select box).
 
 = The form shows a success message but subscribers are not added to my list(s)? =
-If the form shows a success message, it means MailChimp accepted the sign-up request and will take over from there. MailChimp could have a slight delay sending the confirmation email though, just be patient.
+If the form shows a success message, it means MailChimp accepted the sign-up request and will take over from there. MailChimp could have a slight delay sending the confirmation email though, please just be patient.
 
 = How can I style the sign-up form? =
 You can use CSS rules to style the sign-up form, use the following CSS selectors to target the various form elements.
@@ -247,6 +253,7 @@ The MailChimp for WordPress plugin is translated into the following languages.
 
 - English (en_US) - [Danny van Kooten](https://dannyvankooten.com)
 - Dutch (nl_NL) - [Danny van Kooten](https://dannyvankooten.com)
+- German (de_DE) - [Stefan Oderbolz](http://metaodi.ch/)
 - Spanish (es_ES) - [Paul Benitez ](http://www.administrandowp.com/) & [Enrique Pinto](http://www.thehivecluster.com/en)
 - Brazilian (pt_BR) - [Felipe Scuissiatto](http://www.evonline.com.br/)
 - German (de_DE) - [Jochen Gererstorfer](http://slotnerd.de/)
@@ -270,6 +277,29 @@ It's easy to translate the plugin into your own language. Head over to the [tran
 8. **Pro only:** Create your own CSS styles with the form designer in the Pro version.
 
 == Changelog ==
+
+= 2.2.5 - February 13, 2015 =
+
+**Fixed**
+
+- Issue where WooCommerce checkout sign-up was not working for cheque payments.
+- Translation were loaded too late to properly translate some strings, like the admin menu items.
+
+**Improvements**
+
+- The presence of required list fields in form mark-up is now checked as you type.
+- Number fields will now repopulate if an error occurred.
+- Updated all translations.
+- Make sure there is only one plugin instance.
+- Various other code improvements.
+
+**Additions**
+
+- Added support for [GitHub Updater Plugin](https://github.com/afragen/github-updater).
+- You can now specify whether you want to send a welcome email (only with double opt-in disabled).
+
+A huge thank you to [Stefan Oderbolz](http://metaodi.ch/) for various fixed and improvements related to translations in this release.
+
 
 = 2.2.4 - February 4, 2015 =
 
@@ -678,7 +708,34 @@ Minor improvements and additions for compatibility with the [MailChimp Sync plug
 = 1.2.5 - October 8, 2013 =
 * Fixed `undefined function mc4wp_replace_variables` fatal error when using Quick Cache plugin.
 
+= 1.2.4 - October 6, 2013 =
+* Improved: code performance improvements
+* Improved: added `mc4wp_get_form()` for an easier shortcode callback. Useful to [add a sign-up form to the end of your posts](http://dannyvankooten.com/add-mailchimp-sign-up-form-end-of-posts/).
+* Improved default CSS
+* Improved: checkbox debug message only shows to WP Administrators when JavaScript is disabled
+* Added: form nonce for better security
+* Fix: CSS issue where the form caused a huge sidebar gap in some themes.
+
+= 1.2.3 - October 3, 2013 =
+* Fixed: bug where some MailChimp fields were not showing in the field wizard / add field tool.
+
+= 1.2.2 - September 30, 2013 =
+* Fixed sending extra list fields when integrating with third-party forms like Contact Form 7
+
+= 1.2.1 - September 29, 2013 =
+* Improved: total revamp of the form field wizard, many improvements.
+* Improved: some textual improvements in the setting pages
+* Added: debug message to sign-up checkbox for WP administrators
+
+= 1.2 - September 23, 2013 =
+* Improved: updated to MailChimp 2.0 API
+* Improved: now using custom light-weight API class using the WordPress HTTP API.
+* Improved: huge performance improvements on admin settings pages
+* Improved: usability and responsiveness of form settings page
+* Improved: clean-up
+
 == Upgrade Notice ==
 
-= 2.2.4 =
-Updated languages, better WPML compatibility, minor textual & code style improvements.
+= 2.2.5 =
+
+Various code & usability improvements. Fixed WooCommerce checkout sign-up for cheque payments. Added option to send Welcome Email.

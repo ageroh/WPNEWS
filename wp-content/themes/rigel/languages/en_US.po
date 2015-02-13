@@ -1,475 +1,700 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Minos Theme\n"
+"Project-Id-Version: Rigel ARG En_Us\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-07 15:39+0700\n"
-"PO-Revision-Date: 2015-02-11 18:25+0200\n"
+"POT-Creation-Date: 2015-02-13 13:11+0200\n"
+"PO-Revision-Date: 2015-02-13 13:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;_n\n"
-"X-Poedit-Basepath: .\n"
-"Language: en_US\n"
+"X-Poedit-Basepath: T:\\Websites\\WP\\wp-content\\themes\\rigel\n"
 "X-Generator: Poedit 1.7.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../404.php:19
+#: ../rigel/404.php:19
 msgid "Sorry... Page Not Found"
 msgstr "Η Σελίδα δεν βρέθηκε"
 
-#: ../404.php:20
+#: ../rigel/404.php:20
 msgid ""
 "We're sorry, but the content you are looking for doesn't exist. Perhaps "
 "searching could help"
 msgstr ""
 
-#: ../404.php:24 ../header.php:194 ../search.php:23
+#: ../rigel/404.php:24 ../rigel/header.php:197 ../rigel/search.php:23
 msgid "Search..."
 msgstr "Αναζήτηση..."
 
-#: ../404.php:25 ../search.php:24
+#: ../rigel/404.php:25 ../rigel/search.php:24
 msgid "Search"
 msgstr "Αναζήτηση"
 
-#: ../404.php:32
+#: ../rigel/404.php:32
 msgid "Latest Posts"
-msgstr "Τελευταία Άρθρα"
+msgstr "Τα τελευταία νέα από "
 
-#: ../404.php:32
+#: ../rigel/404.php:32
 msgid "Our latest news update"
 msgstr "Τελευταία Νέα"
 
-#: ../archive.php:22 ../archive.php:24 ../archive.php:26 ../archive.php:28
-#: ../search.php:18
+#: ../rigel/archive.php:22 ../rigel/archive.php:24 ../rigel/archive.php:26
+#: ../rigel/archive.php:28 ../rigel/search.php:18
 #, php-format
 msgid "%s"
 msgstr ""
 
-#: ../archive.php:30
+#: ../rigel/archive.php:30
 msgid "Blog Archives"
 msgstr ""
 
-#: ../category.php:20 ../tag.php:20
+#: ../rigel/category.php:20 ../rigel/tag.php:20
 #, php-format
 msgid " %s"
 msgstr ""
 
-#: ../comments.php:7
+#: ../rigel/comments.php:7
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
 
-#: ../comments.php:16
+#: ../rigel/comments.php:16
 msgid "0 Comment"
 msgstr "0 Σχόλια"
 
-#: ../comments.php:16
+#: ../rigel/comments.php:16 ../twentyfifteen/inc/template-tags.php:122
 msgid "1 Comment"
 msgstr "1 Σχόλιο"
 
-#: ../comments.php:16
+#: ../rigel/comments.php:16 ../twentyfifteen/inc/template-tags.php:122
 msgid "% Comments"
 msgstr "% Σχόλια"
 
-#: ../contact.php:70 ../functions.php:479 ../templates/comments-form.php:18
+#: ../rigel/contact.php:70 ../rigel/functions.php:484
+#: ../rigel/templates/comments-form.php:18
 msgid "Name"
 msgstr "Όνομα"
 
-#: ../contact.php:71 ../functions.php:480 ../templates/comments-form.php:21
+#: ../rigel/contact.php:71 ../rigel/functions.php:485
+#: ../rigel/templates/comments-form.php:21
 msgid "Email"
 msgstr "Email"
 
-#: ../contact.php:72
+#: ../rigel/contact.php:72
 msgid "Subject"
 msgstr "Θέμα"
 
-#: ../contact.php:74 ../templates/comments-form.php:30
+#: ../rigel/contact.php:74 ../rigel/templates/comments-form.php:30
 msgid "Message"
 msgstr "Μήνυμα"
 
-#: ../contact.php:76
+#: ../rigel/contact.php:76
 msgid "Send Message"
 msgstr "Αποστολή"
 
-#: ../footer.php:60
-msgid "Back to top"
-msgstr "κορυφή"
-
-#: ../functions.php:168
-msgid "View all results"
-msgstr "Όλα τα αποτελέσματα"
-
-#: ../functions.php:196
-msgid "Thank you! We will get back to you as soon as possible"
-msgstr "Σας ευχαριστούμε πολύ! Θα σας απαντήσουμε άμεσα "
-
-#: ../functions.php:219
-msgid "Email from contact form"
-msgstr "Email"
-
-#: ../functions.php:406 ../single-fullwidth.php:193
-#: ../single-fullwidth.php:465 ../single-left-sidebar.php:207
-#: ../single-left-sidebar.php:479 ../single-sidebar.php:207
-#: ../single-sidebar.php:479 ../lib/contentbuilder.lib.php:170
-#: ../lib/contentbuilder.lib.php:376 ../lib/contentbuilder.lib.php:764
-#: ../lib/contentbuilder.lib.php:1054 ../lib/contentbuilder.lib.php:1432
-#: ../lib/contentbuilder.lib.php:1662
-#: ../templates/template-blog-1-search.php:88
-#: ../templates/template-blog-1.php:89
-#: ../templates/template-blog-2-noexcerpt.php:84
-#: ../templates/template-blog-2.php:89
-#: ../templates/template-blog-3-fullwidth.php:89
-msgid "By"
-msgstr "Από"
-
-#: ../functions.php:438
-msgid "Read Latest Posts From"
-msgstr "Τα τελευταία νέα από "
-
-#: ../functions.php:481 ../templates/comments-form.php:24
-msgid "Website"
-msgstr "Ιστότοπος"
-
-#: ../functions.php:517
-msgid "Editor's rating"
-msgstr "Αξιολόγηση συντάκτη"
-
-#: ../header.php:146
-msgid "Must Read"
-msgstr "ΣΥΝΕΧΗΣ ΕΝΗΜΕΡΩΣΗ"
-
-#: ../single-fullwidth.php:201 ../single-fullwidth.php:473
-#: ../single-left-sidebar.php:215 ../single-left-sidebar.php:487
-#: ../single-sidebar.php:215 ../single-sidebar.php:487
-#: ../templates/template-blog-1-search.php:96
-#: ../templates/template-blog-1.php:114
-#: ../templates/template-blog-2-noexcerpt.php:92
-#: ../templates/template-blog-2.php:97
-#: ../templates/template-blog-3-fullwidth.php:97
-msgid "0"
-msgstr "0"
-
-#: ../single-fullwidth.php:201 ../single-fullwidth.php:473
-#: ../single-left-sidebar.php:215 ../single-left-sidebar.php:487
-#: ../single-sidebar.php:215 ../single-sidebar.php:487
-#: ../templates/template-blog-1-search.php:96
-#: ../templates/template-blog-1.php:114
-#: ../templates/template-blog-2-noexcerpt.php:92
-#: ../templates/template-blog-2.php:97
-#: ../templates/template-blog-3-fullwidth.php:97
-msgid "1"
-msgstr "1"
-
-#: ../single-fullwidth.php:201 ../single-fullwidth.php:473
-#: ../single-left-sidebar.php:215 ../single-left-sidebar.php:487
-#: ../single-sidebar.php:215 ../single-sidebar.php:487
-#: ../templates/template-blog-1-search.php:96
-#: ../templates/template-blog-1.php:114
-#: ../templates/template-blog-2-noexcerpt.php:92
-#: ../templates/template-blog-2.php:97
-#: ../templates/template-blog-3-fullwidth.php:97
-msgid "%"
-msgstr "%"
-
-#: ../single-fullwidth.php:325 ../single-left-sidebar.php:339
-#: ../single-sidebar.php:339
-msgid "Pages:"
-msgstr "Σελίδες:"
-
-#: ../single-fullwidth.php:330 ../single-left-sidebar.php:344
-#: ../single-sidebar.php:344
-msgid "Next page"
-msgstr "Επόμενη"
-
-#: ../single-fullwidth.php:331 ../single-left-sidebar.php:345
-#: ../single-sidebar.php:345
-msgid "Previous page"
-msgstr "Προηγούμενη"
-
-#: ../single-fullwidth.php:361 ../single-left-sidebar.php:375
-#: ../single-sidebar.php:375
-msgid "Previous Article"
-msgstr "Προηγούμενο Άρθρο"
-
-#: ../single-fullwidth.php:374 ../single-left-sidebar.php:388
-#: ../single-sidebar.php:388
-msgid "Next Article"
-msgstr "Επόμενο Άρθρο"
-
-#: ../single-fullwidth.php:426 ../single-left-sidebar.php:440
-#: ../single-sidebar.php:440
-msgid "You might also like"
-msgstr "Διαβάστε Ακόμα"
-
-#: ../single-fullwidth.php:525 ../single-left-sidebar.php:539
-#: ../single-sidebar.php:539 ../lib/custom.lib.php:1421
-msgid "Comment"
-msgstr "Σχόλιο"
-
-#: ../single-fullwidth.php:560 ../single-left-sidebar.php:593
-#: ../single-sidebar.php:593
-msgid "More Story"
-msgstr "Διαβάστε ακόμα"
-
-#: ../sitemap.php:74
-msgid "Pages"
-msgstr "Σελίδες"
-
-#: ../sitemap.php:79
-msgid "Categories"
-msgstr "Κατηγορίες"
-
-#: ../sitemap.php:85 ../lib/custom.lib.php:341
-msgid "Recent Posts"
-msgstr "Πρόσφατα"
-
-#: ../sitemap.php:98
-msgid "Archives"
-msgstr "Αρχεία"
-
-#: ../woocommerce.php:19
-msgid "Shop"
-msgstr ""
-
-#: ../fields/post.fields.php:11
-msgid "Add New Gallery"
-msgstr ""
-
-#: ../fields/post.fields.php:12
-msgid "Edit Gallery"
-msgstr ""
-
-#: ../fields/post.fields.php:13
-msgid "New Gallery"
-msgstr ""
-
-#: ../fields/post.fields.php:14 ../lib/contentbuilder.lib.php:462
-msgid "View Gallery"
-msgstr ""
-
-#: ../fields/post.fields.php:15
-msgid "Search Gallery"
-msgstr ""
-
-#: ../fields/post.fields.php:16
-msgid "No Gallery found"
-msgstr ""
-
-#: ../fields/post.fields.php:17
-msgid "No Gallery found in Trash"
-msgstr ""
-
-#: ../fields/post.fields.php:385
-msgid "Thumbnail"
-msgstr "Εικόνα"
-
-#: ../fields/gallery/tg-gallery.php:58
+#: ../rigel/fields/gallery/tg-gallery.php:58
 msgid "Gallery Images"
 msgstr ""
 
-#: ../fields/gallery/tg-gallery.php:100
+#: ../rigel/fields/gallery/tg-gallery.php:100
 msgid "Allowed Files"
 msgstr ""
 
-#: ../fields/gallery/tg-gallery.php:123
+#: ../rigel/fields/gallery/tg-gallery.php:123
 msgid "Upload Image"
 msgstr ""
 
-#: ../fields/gallery/tg-gallery.php:124
+#: ../rigel/fields/gallery/tg-gallery.php:124
 msgid "Delete All Images"
 msgstr ""
 
-#: ../fields/gallery/tg-gallery.php:131
+#: ../rigel/fields/gallery/tg-gallery.php:131
 msgid "Remove"
 msgstr ""
 
-#: ../lib/contentbuilder.lib.php:94 ../lib/contentbuilder.lib.php:314
-#: ../lib/contentbuilder.lib.php:604 ../lib/contentbuilder.lib.php:1347
+#: ../rigel/fields/post.fields.php:11
+msgid "Add New Gallery"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:12
+msgid "Edit Gallery"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:13
+msgid "New Gallery"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:14 ../rigel/lib/contentbuilder.lib.php:457
+msgid "View Gallery"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:15
+msgid "Search Gallery"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:16
+msgid "No Gallery found"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:17
+msgid "No Gallery found in Trash"
+msgstr ""
+
+#: ../rigel/fields/post.fields.php:385
+msgid "Thumbnail"
+msgstr "Εικόνα"
+
+#: ../rigel/footer.php:60
+msgid "Back to top"
+msgstr "κορυφή"
+
+#: ../rigel/functions.php:173
+msgid "View all results"
+msgstr "Όλα τα αποτελέσματα"
+
+#: ../rigel/functions.php:201
+msgid "Thank you! We will get back to you as soon as possible"
+msgstr "Σας ευχαριστούμε πολύ! Θα σας απαντήσουμε άμεσα "
+
+#: ../rigel/functions.php:224
+msgid "Email from contact form"
+msgstr "Email"
+
+#: ../rigel/functions.php:411 ../rigel/lib/contentbuilder.lib.php:170
+#: ../rigel/lib/contentbuilder.lib.php:371
+#: ../rigel/lib/contentbuilder.lib.php:754
+#: ../rigel/lib/contentbuilder.lib.php:1044
+#: ../rigel/lib/contentbuilder.lib.php:1422
+#: ../rigel/lib/contentbuilder.lib.php:1652 ../rigel/single-fullwidth.php:199
+#: ../rigel/single-fullwidth.php:480 ../rigel/single-left-sidebar.php:214
+#: ../rigel/single-left-sidebar.php:496 ../rigel/single-sidebar.php:213
+#: ../rigel/single-sidebar.php:495
+#: ../rigel/templates/template-blog-1-search.php:88
+#: ../rigel/templates/template-blog-1.php:89
+#: ../rigel/templates/template-blog-2-noexcerpt.php:84
+#: ../rigel/templates/template-blog-2.php:89
+#: ../rigel/templates/template-blog-3-fullwidth.php:89
+msgid "By"
+msgstr "Από"
+
+#: ../rigel/functions.php:443
+msgid "Read Latest Posts From"
+msgstr "Τα τελευταία νέα από "
+
+#: ../rigel/functions.php:486 ../rigel/templates/comments-form.php:24
+msgid "Website"
+msgstr "Ιστότοπος"
+
+#: ../rigel/functions.php:530
+msgid "Editor's rating"
+msgstr "Αξιολόγηση συντάκτη"
+
+#: ../rigel/functions.php:687
+msgid "Article Subtitle"
+msgstr "Υπότιτλος"
+
+#: ../rigel/functions.php:693
+msgid "Article Lead"
+msgstr "Περίληψη Άρθρου"
+
+#: ../rigel/functions.php:699
+msgid "Article Ribon"
+msgstr "Ribon πάνω σε φωτογραφία"
+
+#: ../rigel/header.php:149
+msgid "Must Read"
+msgstr "ΣΥΝΕΧΗΣ ΕΝΗΜΕΡΩΣΗ"
+
+#: ../rigel/lib/contentbuilder.lib.php:94
+#: ../rigel/lib/contentbuilder.lib.php:314
+#: ../rigel/lib/contentbuilder.lib.php:594
+#: ../rigel/lib/contentbuilder.lib.php:1337
 msgid "Latest In"
 msgstr ""
 
-#: ../lib/contentbuilder.lib.php:833
+#: ../rigel/lib/contentbuilder.lib.php:823
 msgid "Empty blog post Please make sure you have created it."
 msgstr ""
 
-#: ../lib/contentbuilder.lib.php:912
+#: ../rigel/lib/contentbuilder.lib.php:902
 msgid "All"
 msgstr ""
 
-#: ../lib/custom.lib.php:137
+#: ../rigel/lib/custom.lib.php:137
 msgid "Home"
 msgstr "Κεντρική"
 
-#: ../lib/custom.lib.php:156
+#: ../rigel/lib/custom.lib.php:156
 msgid "Archive by category "
 msgstr "κατηγορία "
 
-#: ../lib/custom.lib.php:209
+#: ../rigel/lib/custom.lib.php:209
 msgid "Search results for "
 msgstr "Αναζήτηση αποτελεσμάτων για"
 
-#: ../lib/custom.lib.php:212
+#: ../rigel/lib/custom.lib.php:212
 msgid "Posts tagged "
 msgstr ""
 
-#: ../lib/custom.lib.php:217
+#: ../rigel/lib/custom.lib.php:217
 msgid "Articles posted by"
 msgstr ""
 
-#: ../lib/custom.lib.php:220
+#: ../rigel/lib/custom.lib.php:220
 msgid "Error 404"
 msgstr ""
 
-#: ../lib/custom.lib.php:225 ../templates/template-pagination.php:24
+#: ../rigel/lib/custom.lib.php:225
+#: ../rigel/templates/template-pagination.php:24
+#: ../twentyfifteen/archive.php:51 ../twentyfifteen/content-link.php:40
+#: ../twentyfifteen/content-page.php:29 ../twentyfifteen/content.php:42
+#: ../twentyfifteen/image.php:63 ../twentyfifteen/index.php:48
+#: ../twentyfifteen/search.php:40
 msgid "Page"
 msgstr "Σελίδα"
 
-#: ../lib/custom.lib.php:250
+#: ../rigel/lib/custom.lib.php:250
 msgid "(Your comment is awaiting moderation.)"
 msgstr "(Το σχόλιο σας είναι προς έγκριση)"
 
-#: ../lib/custom.lib.php:272
+#: ../rigel/lib/custom.lib.php:272
 msgid "on"
 msgstr "στο"
 
-#: ../lib/custom.lib.php:352 ../lib/custom.lib.php:502
-#: ../lib/custom.lib.php:532
+#: ../rigel/lib/custom.lib.php:341 ../rigel/sitemap.php:85
+msgid "Recent Posts"
+msgstr "Πρόσφατα"
+
+#: ../rigel/lib/custom.lib.php:352 ../rigel/lib/custom.lib.php:502
+#: ../rigel/lib/custom.lib.php:532
 msgid "Best Review"
 msgstr ""
 
-#: ../lib/custom.lib.php:361
+#: ../rigel/lib/custom.lib.php:361
 msgid "Popular Posts"
 msgstr "Δημοφιλή Άρθρα"
 
-#: ../lib/custom.lib.php:502
+#: ../rigel/lib/custom.lib.php:502
 msgid "Popular"
 msgstr "Δημοφιλή"
 
-#: ../lib/custom.lib.php:502
+#: ../rigel/lib/custom.lib.php:502
 msgid "Recent"
 msgstr "Πρόσφατα"
 
-#: ../lib/custom.lib.php:1422
+#: ../rigel/lib/custom.lib.php:1421 ../rigel/single-fullwidth.php:540
+#: ../rigel/single-left-sidebar.php:556 ../rigel/single-sidebar.php:555
+msgid "Comment"
+msgstr "Σχόλιο"
+
+#: ../rigel/lib/custom.lib.php:1422
 msgid "Comments"
 msgstr "Σχόλια"
 
-#: ../lib/menu.lib.php:7
+#: ../rigel/lib/menu.lib.php:7
 msgid "Main Menu"
 msgstr ""
 
-#: ../lib/menu.lib.php:8
+#: ../rigel/lib/menu.lib.php:8
 msgid "Footer Menu"
 msgstr ""
 
-#: ../lib/menu.lib.php:38
+#: ../rigel/lib/menu.lib.php:38
 msgid "Use Mega Menu"
 msgstr ""
 
-#: ../lib/menu.lib.php:44
+#: ../rigel/lib/menu.lib.php:44
 msgid "Display Widget Area"
 msgstr ""
 
-#: ../lib/widgets.lib.php:457
+#: ../rigel/lib/widgets.lib.php:457
 msgid "Photo in News"
 msgstr "Φωτογραφίες από άρθρα"
 
-#: ../lib/widgets.lib.php:518
+#: ../rigel/lib/widgets.lib.php:518
 msgid "Our Authors"
 msgstr ""
 
-#: ../lib/widgets.lib.php:762
+#: ../rigel/lib/widgets.lib.php:762
 msgid "fans"
 msgstr ""
 
-#: ../lib/widgets.lib.php:764
+#: ../rigel/lib/widgets.lib.php:764
 msgid "Like"
 msgstr "Like"
 
-#: ../lib/widgets.lib.php:779
+#: ../rigel/lib/widgets.lib.php:779
 msgid "followers"
 msgstr ""
 
-#: ../lib/widgets.lib.php:781
+#: ../rigel/lib/widgets.lib.php:781
 msgid "Follow"
 msgstr ""
 
-#: ../lib/widgets.lib.php:796
+#: ../rigel/lib/widgets.lib.php:796
 msgid "subscribers"
 msgstr "Εγγεγραμμένοι"
 
-#: ../lib/widgets.lib.php:798
+#: ../rigel/lib/widgets.lib.php:798
 msgid "Subscribe"
 msgstr "Εγγραφή"
 
-#: ../modules/twitteroauth.php:1175
+#: ../rigel/modules/twitteroauth.php:1175
 msgid "right now"
 msgstr "τώρα"
 
-#: ../modules/twitteroauth.php:1177
+#: ../rigel/modules/twitteroauth.php:1177
 msgid "seconds ago"
 msgstr "πριν λίγα δευτερόλεπτα"
 
-#: ../modules/twitteroauth.php:1179
+#: ../rigel/modules/twitteroauth.php:1179
 msgid "about 1 minute ago"
 msgstr "πριν 1 λεπτό"
 
-#: ../modules/twitteroauth.php:1181
+#: ../rigel/modules/twitteroauth.php:1181
 msgid "minutes ago"
 msgstr "πριν λίγα λεπτά"
 
-#: ../modules/twitteroauth.php:1183
+#: ../rigel/modules/twitteroauth.php:1183
 msgid "about 1 hour ago"
 msgstr "πριν 1 ώρα"
 
-#: ../modules/twitteroauth.php:1185
+#: ../rigel/modules/twitteroauth.php:1185
 msgid "hours ago"
 msgstr "πριν λίγες ώρες"
 
-#: ../modules/twitteroauth.php:1187
+#: ../rigel/modules/twitteroauth.php:1187
 msgid "yesterday"
 msgstr "χτες"
 
-#: ../modules/twitteroauth.php:1189
+#: ../rigel/modules/twitteroauth.php:1189
 msgid "days ago"
 msgstr "πριν λίγες μέρες"
 
-#: ../modules/twitteroauth.php:1191
+#: ../rigel/modules/twitteroauth.php:1191
 msgid "over a year ago"
 msgstr "πριν 1 χρόνο"
 
-#: ../templates/comments-form.php:11
+#: ../rigel/single-fullwidth.php:207 ../rigel/single-fullwidth.php:488
+#: ../rigel/single-left-sidebar.php:222 ../rigel/single-left-sidebar.php:504
+#: ../rigel/single-sidebar.php:221 ../rigel/single-sidebar.php:503
+#: ../rigel/templates/template-blog-1-search.php:96
+#: ../rigel/templates/template-blog-1.php:114
+#: ../rigel/templates/template-blog-2-noexcerpt.php:92
+#: ../rigel/templates/template-blog-2.php:97
+#: ../rigel/templates/template-blog-3-fullwidth.php:97
+msgid "0"
+msgstr "0"
+
+#: ../rigel/single-fullwidth.php:207 ../rigel/single-fullwidth.php:488
+#: ../rigel/single-left-sidebar.php:222 ../rigel/single-left-sidebar.php:504
+#: ../rigel/single-sidebar.php:221 ../rigel/single-sidebar.php:503
+#: ../rigel/templates/template-blog-1-search.php:96
+#: ../rigel/templates/template-blog-1.php:114
+#: ../rigel/templates/template-blog-2-noexcerpt.php:92
+#: ../rigel/templates/template-blog-2.php:97
+#: ../rigel/templates/template-blog-3-fullwidth.php:97
+msgid "1"
+msgstr "1"
+
+#: ../rigel/single-fullwidth.php:207 ../rigel/single-fullwidth.php:488
+#: ../rigel/single-left-sidebar.php:222 ../rigel/single-left-sidebar.php:504
+#: ../rigel/single-sidebar.php:221 ../rigel/single-sidebar.php:503
+#: ../rigel/templates/template-blog-1-search.php:96
+#: ../rigel/templates/template-blog-1.php:114
+#: ../rigel/templates/template-blog-2-noexcerpt.php:92
+#: ../rigel/templates/template-blog-2.php:97
+#: ../rigel/templates/template-blog-3-fullwidth.php:97
+msgid "%"
+msgstr "%"
+
+#: ../rigel/single-fullwidth.php:340 ../rigel/single-left-sidebar.php:356
+#: ../rigel/single-sidebar.php:355 ../twentyfifteen/content-link.php:36
+#: ../twentyfifteen/content-page.php:25 ../twentyfifteen/content.php:38
+#: ../twentyfifteen/image.php:59
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: ../rigel/single-fullwidth.php:345 ../rigel/single-left-sidebar.php:361
+#: ../rigel/single-sidebar.php:360 ../twentyfifteen/archive.php:50
+#: ../twentyfifteen/index.php:47 ../twentyfifteen/search.php:39
+msgid "Next page"
+msgstr "Επόμενη"
+
+#: ../rigel/single-fullwidth.php:346 ../rigel/single-left-sidebar.php:362
+#: ../rigel/single-sidebar.php:361 ../twentyfifteen/archive.php:49
+#: ../twentyfifteen/index.php:46 ../twentyfifteen/search.php:38
+msgid "Previous page"
+msgstr "Προηγούμενη"
+
+#: ../rigel/single-fullwidth.php:376 ../rigel/single-left-sidebar.php:392
+#: ../rigel/single-sidebar.php:391
+msgid "Previous Article"
+msgstr "Προηγούμενο Άρθρο"
+
+#: ../rigel/single-fullwidth.php:389 ../rigel/single-left-sidebar.php:405
+#: ../rigel/single-sidebar.php:404
+msgid "Next Article"
+msgstr "Επόμενο Άρθρο"
+
+#: ../rigel/single-fullwidth.php:441 ../rigel/single-left-sidebar.php:457
+#: ../rigel/single-sidebar.php:456
+msgid "You might also like"
+msgstr "Διαβάστε Ακόμα"
+
+#: ../rigel/single-fullwidth.php:575 ../rigel/single-left-sidebar.php:610
+#: ../rigel/single-sidebar.php:609
+msgid "More Story"
+msgstr "Διαβάστε ακόμα"
+
+#: ../rigel/sitemap.php:74
+msgid "Pages"
+msgstr "Σελίδες"
+
+#: ../rigel/sitemap.php:79
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: ../rigel/sitemap.php:98
+msgid "Archives"
+msgstr "Αρχεία"
+
+#: ../rigel/templates/comments-form.php:11
 msgid "Leave a Reply"
 msgstr "Απάντηση"
 
-#: ../templates/comments-form.php:34
+#: ../rigel/templates/comments-form.php:34
 msgid "Cancel Reply"
 msgstr "Ακύρωση"
 
-#: ../templates/script-contact-form.php:16
+#: ../rigel/templates/script-contact-form.php:16
 msgid "Please enter"
 msgstr "Παρακαλώ εισάγετε"
 
-#: ../templates/script-contact-form.php:22
+#: ../rigel/templates/script-contact-form.php:22
 msgid "Please enter valid"
 msgstr "Παρακαλώ εισάγετε έγκυρο"
 
-#: ../templates/template-blog-1.php:99
+#: ../rigel/templates/template-blog-1.php:99
 msgid "Posted In"
 msgstr "δημοσιεύθηκε στην κατηγορία"
 
-#: ../templates/template-pagination.php:24
+#: ../rigel/templates/template-pagination.php:24
 msgid "of"
 msgstr "από"
 
-#: ../templates/template-share.php:16
+#: ../rigel/templates/template-share.php:16
 msgid "Share On"
 msgstr "Μοιράσου το"
 
-#: ../templates/template-slider-full.php:42
-#: ../templates/template-slider.php:45
+#: ../rigel/templates/template-slider-full.php:44
+#: ../rigel/templates/template-slider.php:45
 msgid "Read Full Story"
 msgstr "διαβάστε περισσότερα"
+
+#: ../rigel/woocommerce.php:19
+msgid "Shop"
+msgstr ""
+
+#: ../twentyfifteen/404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../twentyfifteen/404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../twentyfifteen/author-bio.php:12
+msgid "Published by"
+msgstr ""
+
+#: ../twentyfifteen/author-bio.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../twentyfifteen/comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: ../twentyfifteen/content-link.php:31 ../twentyfifteen/content.php:33
+#: ../twentyfifteen/inc/template-tags.php:237
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: ../twentyfifteen/content-link.php:56 ../twentyfifteen/content-page.php:35
+#: ../twentyfifteen/content-search.php:28
+#: ../twentyfifteen/content-search.php:33 ../twentyfifteen/content.php:57
+#: ../twentyfifteen/image.php:71
+msgid "Edit"
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../twentyfifteen/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../twentyfifteen/footer.php:25
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: ../twentyfifteen/footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:85
+msgid "Primary Menu"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:86
+msgid "Social Links Menu"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:133
+msgid "Widget Area"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:135
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: ../twentyfifteen/functions.php:231
+msgid "expand child menu"
+msgstr ""
+
+#: ../twentyfifteen/functions.php:232
+msgid "collapse child menu"
+msgstr ""
+
+#: ../twentyfifteen/header.php:27
+msgid "Skip to content"
+msgstr ""
+
+#: ../twentyfifteen/header.php:44
+msgid "Menu and widgets"
+msgstr ""
+
+#: ../twentyfifteen/image.php:24
+msgid "Previous Image"
+msgstr ""
+
+#: ../twentyfifteen/image.php:24
+msgid "Next Image"
+msgstr ""
+
+#: ../twentyfifteen/inc/back-compat.php:37
+#: ../twentyfifteen/inc/back-compat.php:47
+#: ../twentyfifteen/inc/back-compat.php:60
+#, php-format
+msgid ""
+"Twenty Fifteen requires at least WordPress version 4.1. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:31
+msgid "Base Color Scheme"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:46
+msgid "Header and Sidebar Text Color"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:47
+#: ../twentyfifteen/inc/customizer.php:63
+#: ../twentyfifteen/inc/customizer.php:68
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:62
+msgid "Header and Sidebar Background Color"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:92
+msgid "Default"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:103
+msgid "Dark"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:114
+msgid "Yellow"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:125
+msgid "Pink"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:136
+msgid "Purple"
+msgstr ""
+
+#: ../twentyfifteen/inc/customizer.php:147
+msgid "Blue"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:26
+msgid "Older Comments"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:49
+msgid "Featured"
+msgstr ""
+
+#: ../twentyfifteen/inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr ""
+
+#: ../twentyfifteen/search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../twentyfifteen/single.php:33
+msgid "Next"
+msgstr ""
+
+#: ../twentyfifteen/single.php:34
+msgid "Next post:"
+msgstr ""
+
+#: ../twentyfifteen/single.php:36
+msgid "Previous"
+msgstr ""
+
+#: ../twentyfifteen/single.php:37
+msgid "Previous post:"
+msgstr ""
 
 #, fuzzy
 #~ msgid "Cancel"

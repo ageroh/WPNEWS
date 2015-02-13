@@ -45,7 +45,7 @@ if( ! defined( 'MC4WP_LITE_VERSION' ) ) {
 						<th scope="row"><?php _e( 'Lists this form subscribes to', 'mailchimp-for-wp' ); ?></th>
 					<?php // loop through lists
 					if( empty( $lists ) ) {
-						?><td colspan="2"><?php printf( __( 'No lists found, %sare you connected to MailChimp?%s', 'mailchimp-for-wp' ), '<a href="'. admin_url( 'admin.php?page=mailchimp-for-wp' ) .'">', '</a>' ); ?></td><?php
+						?><td colspan="2"><?php printf( __( 'No lists found, <a href="%s">are you connected to MailChimp</a>?', 'mailchimp-for-wp' ), admin_url( 'admin.php?page=mailchimp-for-wp' ) ); ?></td><?php
 					} else { ?>
 					<td>
 
@@ -68,19 +68,6 @@ if( ! defined( 'MC4WP_LITE_VERSION' ) ) {
 						<td colspan="3">
 							<h4><?php _e( 'Form mark-up', 'mailchimp-for-wp' ); ?></h4>
 
-							<?php if ( ! empty( $missing_form_fields ) ) {
-
-								?><p class="mc4wp-notice missing-form-fields"><?php
-
-								echo __( 'Your form is missing the following (required) form fields:', 'mailchimp-for-wp' ) . ' <br /><br />';
-
-foreach( $missing_form_fields as $missing_field ) {
-	echo '- ' . $missing_field . '<br />';
-}
-								?></p><?php
-
-} ?>
-
 							<div class="mc4wp-wrapper">
 								<div class="mc4wp-col mc4wp-first">
 									<?php
@@ -98,10 +85,16 @@ foreach( $missing_form_fields as $missing_field ) {
 							</div>
 						</td>
 					</tr>
-
 			</table>
 
-	<?php submit_button(); ?>
+			<div id="missing-fields-notice" class="mc4wp-notice" style="display: none;">
+				<p>
+					<?php echo __( 'Your form is missing the following (required) form fields:', 'mailchimp-for-wp' ); ?>
+				</p>
+				<ul id="missing-fields-list" class="ul-square"></ul>
+			</div>
+
+		<?php submit_button(); ?>
 
 		<h3 class="mc4wp-title"><?php _e( 'MailChimp Settings', 'mailchimp-for-wp' ); ?></h3>
 		<table class="form-table">
@@ -119,13 +112,18 @@ foreach( $missing_form_fields as $missing_field ) {
 				</td>
 				<td class="desc"><?php _e( 'Select "yes" if you want people to confirm their email address before being subscribed (recommended)', 'mailchimp-for-wp' ); ?></td>
 			</tr>
-			<tr class="pro-feature" valign="top">
+			<?php $enabled = ! $opts['double_optin']; ?>
+			<tr id="mc4wp-send-welcome" valign="top" <?php if( ! $enabled ) { ?>class="hidden"<?php } ?>>
 				<th scope="row"><?php _e( 'Send Welcome Email?', 'mailchimp-for-wp' ); ?></th>
 				<td class="nowrap">
-					<input type="radio" readonly />
-					<label><?php _e( 'Yes', 'mailchimp-for-wp' ); ?></label> &nbsp;
-					<input type="radio" checked readonly /> 
-					<label><?php _e( 'No', 'mailchimp-for-wp' ); ?></label> &nbsp;
+					<label>
+						<input type="radio"  name="mc4wp_lite_form[send_welcome]" value="1" <?php if( $enabled ) { checked( $opts['send_welcome'], 1 ); } else { echo 'disabled'; } ?> />
+						<?php _e( 'Yes', 'mailchimp-for-wp' ); ?>
+					</label> &nbsp;
+					<label>
+						<input type="radio" name="mc4wp_lite_form[send_welcome]" value="0" <?php if( $enabled ) { checked( $opts['send_welcome'], 0 ); } else { echo 'disabled'; } ?> />
+						<?php _e( 'No', 'mailchimp-for-wp' ); ?>
+					</label>
 				</td>
 				<td class="desc"><?php _e( 'Select "yes" if you want to send your lists Welcome Email if a subscribe succeeds (only when double opt-in is disabled).' ,'mailchimp-for-wp' ); ?></td>
 			</tr>

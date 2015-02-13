@@ -605,7 +605,11 @@ if(THEMEDEMO)
 
 
 /**
- START:																					CUSTOM CODDE A.GEROGIANNIS 
+ 
+
+ 																		CUSTOM CODDE A.GEROGIANNIS 
+
+
  */
 //START
 
@@ -632,45 +636,82 @@ Create custom Field over Posts - Display it on Admin edit and save. 	(Add all cu
 */
 
 /* Fire our meta box setup function on the post editor screen. */
-//add_action( 'load-post.php', 'news_custom_post_meta_boxes_setup' );
-//add_action( 'load-post-new.php', 'news_custom_post_meta_boxes_setup' );
+add_action( 'load-post.php', 'news_custom_post_meta_boxes_setup' );
+add_action( 'load-post-new.php', 'news_custom_post_meta_boxes_setup' );
 
 function news_custom_post_meta_boxes_setup() {
   /* Add meta boxes on the 'add_meta_boxes' hook. */
   add_action( 'add_meta_boxes', 'news_custom_add_post_meta_boxes' );
 
   /* Save post meta on the 'save_post' hook. */
-  add_action( 'save_post', 'news_custom_save_post_class_meta', 10, 2 );
+  add_action( 'save_post', 'news_custom_save_post_class_meta_subtitle', 10, 2);
+  add_action( 'save_post', 'news_custom_save_post_class_meta_lead', 10, 2);
+  add_action( 'save_post', 'news_custom_save_post_class_meta_ribon', 10, 2);
+
 }
+
+
 
 /* Create one or more meta boxes to be displayed on the post editor screen. */
 function news_custom_add_post_meta_boxes() {
 
   add_meta_box(
-    '_subtitle_Custom',      // Unique ID
-    esc_html__( 'Subtitle', 'example' ),    // Title
-    '_subtitle_Custom_meta_box',   // Callback function
-    'post',         					// Admin page (or post type)
+    '_article_details',      // Unique ID
+    esc_html__( 'Τιτλοφορία', 'example' ),  // article details!
+    '_article_details_Custom_meta_box',   	// Callback function
+    'post',         						// Admin page (or post type)
     'advanced',         					// Context
-    'high'         					// Priority
+    'high'         							// Priority
   );
+
 }
 
 /* Display the post meta box. */
-function _subtitle_Custom_meta_box( $object, $box ) { ?>
+function _article_details_Custom_meta_box( $object, $box ) { ?>
 
   <?php wp_nonce_field( basename( __FILE__ ), '_subtitle_Custom_nonce' ); ?>
 
   <p>
-    <label for="_subtitle_Custom"><?php _e( "article subtitle", 'example' ); ?></label>
+    <label for="_subtitle_Custom"><?php _e( "Υπότιτλος", 'example' ); ?></label>
     <br />
-    <input class="widefat" type="text" name="_subtitle_Custom" id="_subtitle_Custom" value="<?php echo esc_attr( get_post_meta( $object->ID, '_subtitle_Custom', true ) ); ?>" size="30" />
+    <input class="widefat" type="text" name="_subtitle_Custom" id="_subtitle_Custom" value="<?php echo esc_attr( get_post_meta( $object->ID, '_subtitle_Custom', true ) ); ?>" size="80" />
   </p>
+
+  <p>
+    <label for="_lead_Custom"><?php _e( "Περίληψη", 'example' ); ?></label>
+    <br />
+    <input class="widefat" type="text" name="_lead_Custom" id="_lead_Custom" value="<?php echo esc_attr( get_post_meta( $object->ID, '_lead_Custom', true ) ); ?>" size="200" />
+  </p>
+
+   <p>
+    <label for="_ribon_Custom"><?php _e( "Ribon Φωτογραφίας", 'example' ); ?></label>
+    <br />
+    <input class="widefat" type="text" name="_ribon_Custom" id="_ribon_Custom" value="<?php echo esc_attr( get_post_meta( $object->ID, '_ribon_Custom', true ) ); ?>" size="50" />
+  </p>
+
 <?php }
 
 
+
+function news_custom_save_post_class_meta_subtitle( $post_id, $post)
+{
+	return news_custom_save_post_class_meta( $post_id, $post, '_subtitle_Custom');
+}
+
+
+function news_custom_save_post_class_meta_lead( $post_id, $post)
+{
+	return news_custom_save_post_class_meta( $post_id, $post, '_lead_Custom');
+}
+
+function news_custom_save_post_class_meta_ribon( $post_id, $post)
+{
+	return news_custom_save_post_class_meta( $post_id, $post, '_ribon_Custom');
+}
+
+
 /* Save the meta box's post metadata. */
-function news_custom_save_post_class_meta( $post_id, $post ) {
+function news_custom_save_post_class_meta( $post_id, $post, $meta_key ) {
 
   /* Verify the nonce before proceeding. */
   if ( !isset( $_POST['_subtitle_Custom_nonce'] ) || !wp_verify_nonce( $_POST['_subtitle_Custom_nonce'], basename( __FILE__ ) ) )
@@ -684,10 +725,7 @@ function news_custom_save_post_class_meta( $post_id, $post ) {
     return $post_id;
 
   /* Get the posted data and sanitize it for use as an HTML class. */
-  $new_meta_value = ( isset( $_POST['_subtitle_Custom'] ) ? $_POST['_subtitle_Custom']  : '' );
-
-  /* Get the meta key. */
-  $meta_key = '_subtitle_Custom';
+  $new_meta_value = ( isset( $_POST[$meta_key] ) ? $_POST[$meta_key]  : '' );
 
   /* Get the meta value of the custom field key. */
   $meta_value = get_post_meta( $post_id, $meta_key, true );
@@ -703,6 +741,7 @@ function news_custom_save_post_class_meta( $post_id, $post ) {
   /* If there is no new meta value but an old value exists, delete it. */
   elseif ( '' == $new_meta_value && $meta_value )
     delete_post_meta( $post_id, $meta_key, $meta_value );
+
 }
 
 
@@ -757,21 +796,6 @@ function wpse_Importantheader_wp_head(){
 }
 
 
-/**
-RELATED POSTS : POSTS 2 POSTS PLUGIN
-*/
-// Relate Posts 
-function my_connection_types() {
-    p2p_register_connection_type( array(
-        'name' => 'posts_to_posts',
-        'from' => 'post',
-        'to' => 'post'
-    ) );
-}
-add_action( 'p2p_init', 'my_connection_types' );
-
-
-
 
 
 /**
@@ -804,9 +828,59 @@ function change_post_object_label() {
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
+
+
+
+
+/**
+								
+								!!!!!	CUSTOM FUNTCTION TO CALL AND REMOVE ALL IMAGES FROM SERVER !!!!!	
+(please remove completely when go live !! )  call: /?delete-featured-images=1 to delete all.
+*/
+
+add_action('init', 'foo_bar_delete_featured', 0);
+function foo_bar_delete_featured(){
+
+    # Check for logged in state
+    if(!is_user_logged_in())
+        return;
+
+    # Check for admin role
+    if(!current_user_can('manage_options'))
+        return;
+
+    # Check for query string
+    if(isset($_GET['delete-featured-images']) && $_GET['delete-featured-images'] == 1){
+        global $wpdb;
+
+        # Run a DQL to get all featured image rows
+        $attachments = $wpdb->get_results("SELECT * FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id'");
+
+        foreach($attachments as $attachment){
+
+            # Run a DML to remove this featured image row
+            $wpdb->query("DELETE FROM $wpdb->postmeta WHERE meta_id = '$attachment->meta_id' LIMIT 1");
+
+            # Delete attachment DB rows and files
+            wp_delete_attachment($attachment->meta_value, true);
+
+            # Print to screen
+            show_message('Attachment #$attachment->meta_value deleted.');
+        }
+        exit;
+    }
+}
+
+
+
+
 //END
 /**
- END : 																				CUSTOM CODDE A.GEROGIANNIS 
+
+
+ 																	CUSTOM CODDE A.GEROGIANNIS 
+
+
  */
 
 

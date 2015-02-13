@@ -17,20 +17,18 @@ class MC4WP_Lite_Admin
 	/**
 	 * @var string The relative path to the main plugin file from the plugins dir
 	 */
-	private $plugin_file = 'mailchimp-for-wp/mailchimp-for-wp.php';
+	private $plugin_file;
 
 	/**
 	 * Constructor
 	 */
-	public function __construct()
-	{
-		$this->setup_hooks();
+	public function __construct() {
 
-		// did the user click on upgrade to pro link?
-		if( isset( $_GET['page'] ) && $_GET['page'] === 'mailchimp-for-wp-upgrade' && false === headers_sent() ) {
-			wp_redirect( 'https://mc4wp.com/#utm_source=lite-plugin&utm_medium=link&utm_campaign=menu-upgrade-link' );
-			exit;
-		}
+		$this->plugin_file = plugin_basename( MC4WP_LITE_PLUGIN_FILE );
+
+		$this->load_translations();
+		$this->setup_hooks();
+		$this->listen();
 	}
 
 	/**
@@ -57,14 +55,15 @@ class MC4WP_Lite_Admin
 	private function setup_hooks() {
 
 		global $pagenow;
+		$current_page = isset( $pagenow ) ? $pagenow : '';
 
-		// Actions used throughout WP Admin
+		// Actions used globally throughout WP Admin
 		add_action( 'admin_init', array( $this, 'initialize' ) );
 		add_action( 'admin_menu', array( $this, 'build_menu' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'load_css_and_js' ) );
 
-		// Hooks for Plugins overview
-		if( isset( $pagenow ) && $pagenow === 'plugins.php' ) {
+		// Hooks for Plugins overview page
+		if( $current_page === 'plugins.php' ) {
 			$this->plugin_file = plugin_basename( MC4WP_LITE_PLUGIN_FILE );
 
 			add_filter( 'plugin_action_links_' . $this->plugin_file, array( $this, 'add_plugin_settings_link' ), 10, 2 );
@@ -76,6 +75,14 @@ class MC4WP_Lite_Admin
 			add_filter( 'quicktags_settings', array( $this, 'set_quicktags_buttons' ), 10, 2 );
 		}
 
+	}
+
+	/**
+	 * Load the plugin translations
+	 */
+	private function load_translations() {
+		// load the plugin text domain
+		load_plugin_textdomain( 'mailchimp-for-wp', false, dirname( $this->plugin_file ) . '/languages' );
 	}
 
 	/**
@@ -92,13 +99,21 @@ class MC4WP_Lite_Admin
 		register_setting( 'mc4wp_lite_checkbox_settings', 'mc4wp_lite_checkbox', array( $this, 'validate_checkbox_settings' ) );
 		register_setting( 'mc4wp_lite_form_settings', 'mc4wp_lite_form', array( $this, 'validate_form_settings' ) );
 
-		// load the plugin text domain
-		load_plugin_textdomain( 'mailchimp-for-wp', false, dirname( $this->plugin_file ) . '/languages/' );
-
 		// store whether this plugin has the BWS captcha plugin running (https://wordpress.org/plugins/captcha/)
 		$this->has_captcha_plugin = function_exists( 'cptch_display_captcha_custom' );
 
 		$this->upgrade();
+	}
+
+	/**
+	 * Listen to various mc4wp actions
+	 */
+	private function listen() {
+		// did the user click on upgrade to pro link?
+		if( isset( $_GET['page'] ) && $_GET['page'] === 'mailchimp-for-wp-upgrade' && false === headers_sent() ) {
+			wp_redirect( 'https://mc4wp.com/#utm_source=lite-plugin&utm_medium=link&utm_campaign=menu-upgrade-link' );
+			exit;
+		}
 	}
 
 	/**
@@ -132,7 +147,7 @@ class MC4WP_Lite_Admin
 			return $links;
 		}
 
-		 $settings_link = '<a href="admin.php?page=mailchimp-for-wp">'. __( 'Settings', 'mailchimp-for-wp' ) . '</a>';
+		 $settings_link = '<a href="' . admin_url( 'admin.php?page=mailchimp-for-wp' ) . '">'. __( 'Settings', 'mailchimp-for-wp' ) . '</a>';
 		 array_unshift( $links, $settings_link );
 		 return $links;
 	}
@@ -151,7 +166,7 @@ class MC4WP_Lite_Admin
 		}
 
 		$links[] = '<a href="https://wordpress.org/plugins/mailchimp-for-wp/faq/">FAQ</a>';
-		$links[] = '<a href="https://mc4wp.com/#utm_source=lite-plugin&utm_medium=link&utm_campaign=plugins-upgrade-link">' . __( 'Upgrade to Pro', 'mailchimp-for-wp' ) . '</a>';
+		$links[] = '<a href="https://mc4wp.com/#utm_source=lite-plugin&utm_medium=link&utm_campaign=plugins-upgrade-link">' . __( 'Upgrade to MailChimp for WordPress Pro', 'mailchimp-for-wp' ) . '</a>';
 		return $links;
 	}
 

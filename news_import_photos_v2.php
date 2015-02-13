@@ -4,7 +4,6 @@
     My special import script for NEWS.GR
    */
 
-ob_implicit_flush(1);
 
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
@@ -22,27 +21,37 @@ $conn=mysqli_connect("localhost",$username, $password, "ContentDB_161");
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  writeLog(mysqli_connect_error());
   return;
 }
 
+$limit = 50;
+writeLog("Try get all results from DB for PHOTOS-ARTICLES. Limit set to " . $limit);
+
 
 echo "<br/> Connection successfully to MySQL.";
-writeLog("Connection successfully to MySQL.\n");
+writeLog("Connection successfully to MySQL");
 
 $results = mysqli_query($conn, "
-                        SELECT DISTINCT
-                              ententityid as ID
-                            , entPublished
-                            , entPreview as '_thumbnail_id'
-                        FROM   contentdb_161.entity 
-                        INNER JOIN contentdb_161.category_entity catEntCon
-                          ON catEntCon.caeentityid = ententityid 
-                        INNER JOIN contentdb_161.category cat 
-                          ON cat.catCategoryID = catEntCon.caeCategoryID
-                        WHERE  entstatusid = 3 
-                          AND entEntityTypeID IN ( 1 ) 
-                        ORDER BY entPublished DESC 
-                        LIMIT 1000; ");
+                       SELECT DISTINCT
+                          e.ententityid as ID
+                        , e.entPublished
+                        , e.entPreview as '_thumbnail_id'
+                      FROM   contentdb_161.entity e
+                      INNER join
+                        ( SELECT  ententityid,
+                            @curRow := @curRow + 1 AS row_number
+                        FROM    contentdb_161.entity l
+                        JOIN    (SELECT @curRow := 0) r
+                          WHERE  entstatusid = 3 AND entEntityTypeID IN ( 1 ) 
+                        ORDER BY entPublished DESC
+                        LIMIT " . $limit . " ) cut
+                        ON cut.ententityid = e.ententityid
+                      INNER JOIN contentdb_161.category_entity catEntCon
+                        ON catEntCon.caeentityid = e.ententityid 
+                      INNER JOIN contentdb_161.category cat 
+                        ON cat.catCategoryID = catEntCon.caeCategoryID
+                      order by cut.row_number asc; ");
 
 echo "<br/> Try get results..";
 
@@ -245,7 +254,7 @@ function file_get_contents_curl($url) {
 
 function writeLog($data)
 {
-  file_put_contents( $_SERVER['DOCUMENT_ROOT'] . "\\errorLog.txt" , $data, FILE_APPEND );
+  file_put_contents( $_SERVER['DOCUMENT_ROOT'] . "\\errorLog.txt" ,  date("Y-m-d H:i:s"). " -> " . $data, FILE_APPEND );
 }
 
 ?>

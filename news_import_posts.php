@@ -22,6 +22,7 @@ $conn=mysqli_connect("localhost",$username, $password, "ContentDB_161");
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  writeLog( mysqli_connect_error());
   return;
 }
 
@@ -29,42 +30,53 @@ if (mysqli_connect_errno())
 /**
 INSERT POSTS !
 */
+$limit = 50;
+writeLog("Try get all results from DB for POSTS. Limit set to " . $limit);
 
 echo "<br/> Connection successfully to MySQL.";
 $results = mysqli_query($conn, "
-                        SELECT 
-                              ententityid as ID
-                            , (SELECT avaValue FROM contentdb_161.ValueText WHERE (avaEntityID = ententityid) AND (avaLanguageID = 1) AND avaSatID = 13) as BODY
-                            , (SELECT avaValue FROM contentdb_161.ValueString WHERE (avaEntityID = ententityid) AND (avaLanguageID = 1) AND (avaSatID = 10)) as TITLE
-                            , (SELECT avaValue FROM contentdb_161.ValueText WHERE (avaEntityID = ententityid) AND (avaLanguageID = 1) AND (avaSatID = 12)) as LEAD
-                            , (SELECT avaValue FROM contentdb_161.ValueString WHERE (avaEntityID = ententityid) AND (avaLanguageID = 1) AND (avaSatID = 44)) as SUBTITLE
-                            , (SELECT avaValue FROM contentdb_161.ValueString WHERE (avaEntityID = ententityid) AND (avaLanguageID = 1) AND (avaSatID = 254)) as RIBON_ON_IMAGE
-                            , (select contentdb_161.iGetEntityThirdCategoryID(ententityid)) as catID3
-                            , (select contentdb_161.iGetEntitySecondaryCategoryID(ententityid)) as catID2
-                            , (select contentdb_161.iGetEntityPrimaryCategoryID(ententityid)) as catID1
-                            , entURL
-                            , entPublished
-                            , entModified
-                            , entPreview as '_thumbnail_id'
-                            , catShortName
-                            , catURL
-                            , catCategoryID
-                            , catParentID
-                            , Concat(catURL, '/' , convert(catCategoryID, CHAR(10)) , '/' ) as CategoryURL
-                            , catMETADescription
-                            , catMETAKeywords
-                            , substring(substring_index(entURL,'/',-1), 1, LOCATE('.html', substring_index(entURL,'/',-1))-1) as slugFriendlyNews
-                        FROM   contentdb_161.entity 
-                        INNER JOIN contentdb_161.category_entity catEntCon
-                          ON catEntCon.caeentityid = ententityid 
-                        INNER JOIN contentdb_161.category cat 
-                          ON cat.catCategoryID = catEntCon.caeCategoryID
-                        WHERE  entstatusid = 3 
-                          AND entEntityTypeID IN ( 1 ) 
-                        ORDER BY entPublished DESC 
-                        LIMIT 1000; ");
+                              SELECT 
+                                    e.ententityid as ID
+                                  , (SELECT avaValue FROM contentdb_161.ValueText WHERE (avaEntityID = e.ententityid) AND (avaLanguageID = 1) AND avaSatID = 13) as BODY
+                                  , (SELECT avaValue FROM contentdb_161.ValueString WHERE (avaEntityID = e.ententityid) AND (avaLanguageID = 1) AND (avaSatID = 10)) as TITLE
+                                  , (select contentdb_161.iGetEntityThirdCategoryID(e.ententityid)) as catID3
+                                  , (select contentdb_161.iGetEntitySecondaryCategoryID(e.ententityid)) as catID2
+                                  , (select contentdb_161.iGetEntityPrimaryCategoryID(e.ententityid)) as catID1
+                                  , entURL
+                                  , entPublished
+                                  , entModified
+                                  , entPreview as '_thumbnail_id'
+                                  , catShortName
+                                  , catURL
+                                  , catCategoryID
+                                  , catParentID
+                                  , Concat(catURL, '/' , convert(catCategoryID, CHAR(10)) , '/' ) as CategoryURL
+                                  , catMETADescription
+                                  , catMETAKeywords
+                                  , substring(substring_index(entURL,'/',-1), 1, LOCATE('.html', substring_index(entURL,'/',-1))-1) as slugFriendlyNews
+                                  , wp_users.ID as UserID
+                              FROM   contentdb_161.entity e
+                              INNER join
+                                ( SELECT  ententityid,
+                                    @curRow := @curRow + 1 AS row_number
+                                FROM    contentdb_161.entity l
+                                JOIN    (SELECT @curRow := 0) r
+                                WHERE entstatusid = 3 AND entEntityTypeID IN ( 1 ) 
+                                ORDER BY entPublished DESC
+                                LIMIT " . $limit . ") cut
+                                  ON cut.ententityid = e.ententityid
+                              INNER JOIN contentdb_161.category_entity catEntCon
+                                ON catEntCon.caeentityid = e.ententityid 
+                              INNER JOIN contentdb_161.category cat 
+                                ON cat.catCategoryID = catEntCon.caeCategoryID
+                              LEFT JOIN contentdb_161.Users
+                                ON Users.wusUserID = entCreatedBy
+                                   and  wusUserID <> 0
+                              LEFT JOIN wp_users
+                                ON wp_users.user_nicename = Users.wusShortName
+                              order by cut.row_number asc;");
 
-echo "Try get results..";
+
 
 $i = 0;
 
@@ -78,6 +90,7 @@ while ($row = mysqli_fetch_array($results, MYSQL_ASSOC))
   $post['post_status'] = 'publish';
   $post['post_date'] = date('Y-m-d H:i:s',strtotime($row['entPublished']));
   $post['post_title'] = $row['TITLE'];
+  $post['post_author'] =  $row['UserID'];
   
   if($row['slugFriendlyNews'] != '')
     $post['post_name'] = $row['slugFriendlyNews'];
@@ -92,7 +105,7 @@ while ($row = mysqli_fetch_array($results, MYSQL_ASSOC))
   $i++;
 }
   
-echo "<br/>Total articles to be inserted: " . count($posts);
+writeLog( "<br/>Total articles to be inserted: " . count($posts));
 
 mysqli_free_result($results);
 mysqli_close ($conn);
@@ -101,9 +114,9 @@ mysqli_close ($conn);
 
 
 
-echo "<br/> Start inserting posts and images...";
+echo "<br/> Start inserting posts ...";
    
-writeLog("Start inserting posts and images..." . "\n");
+writeLog("Start inserting posts...");
 
 foreach ($posts as $post) 
 {
@@ -117,17 +130,18 @@ foreach ($posts as $post)
     
     if( is_wp_error( $wp_error ) ) {
         echo $wp_error->get_error_message();
+        writeLog($wp_error->get_error_message());
         return;
     }
     
     echo "<br/> Post created: " . $wp_error;
-    writeLog(" Post created: " . $wp_error . "\n");
+    writeLog(" Post created: " . $wp_error );
   }
 
 }
 
 echo "<br/> successfully finished uploading articles.";
-writeLog(" successfully finished uploading articles" . "\n");
+writeLog(" successfully finished uploading articles");
 
 
 die();
@@ -137,31 +151,6 @@ function acme_post_exists( $id ) {
 }
 
 
-// not used
-function slugify($text)
-{ 
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  if (empty($text))
-  {
-  return 'n-a';
-  }
-
-  return $text;
-}
 
 
 function addTerm($id, $tax, $term, $rank, $parent) {
@@ -178,8 +167,10 @@ function addTerm($id, $tax, $term, $rank, $parent) {
 
 function writeLog($data)
 {
-  file_put_contents( $_SERVER['DOCUMENT_ROOT'] . "\\errorLog.txt" , $data, FILE_APPEND );
+  file_put_contents( $_SERVER['DOCUMENT_ROOT'] . "\\errorLog.txt" ,  date("Y-m-d H:i:s"). " -> " . $data . " \n", FILE_APPEND );
 }
+
+
 
 
 
@@ -289,5 +280,36 @@ function greeklish_permalinks_sanitize_title($text) {
 }
 
 
+/*// not used
+function slugify($text)
+{ 
+  // replace non letter or digits by -
+  $text = preg_replace('~[^\\pL\d]+~u', '-', $text);
+
+  // trim
+  $text = trim($text, '-');
+
+  // transliterate
+  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+  // lowercase
+  $text = strtolower($text);
+
+  // remove unwanted characters
+  $text = preg_replace('~[^-\w]+~', '', $text);
+
+  if (empty($text))
+  {
+  return 'n-a';
+  }
+
+  return $text;
+}
+*/
+
+
+
 ?>	
+
+
 

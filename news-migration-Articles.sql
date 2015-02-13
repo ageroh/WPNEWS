@@ -1,6 +1,5 @@
 use wordpressdb;
 
-
 /*
 # all tags inserted 
 select *
@@ -29,16 +28,13 @@ where taxonomy = 'category'
  
 */
 
+
 ## CATEGORY
 INSERT INTO wp_terms(term_id, name, slug, term_group)
 SELECT DISTINCT catCategoryID
-			#, (case when catParentID = 1 or catParentID = 0 then '' else catParentID end) as catParentID
 			, catShortName
 			, if( LOCATE('/', catURL)>0 , SUBSTRING(catURL, LOCATE('/', catURL)+1), catURL)
 			, 0
-            #, catURL
-			#, catMETADescription
-			#, catMETAKeywords
 FROM  contentdb_161.entity 
 INNER JOIN contentdb_161.category_entity catEntCon
 	ON catEntCon.caeentityid = ententityid 
@@ -115,7 +111,6 @@ order by entPublished asc;
 
 
 
-
 # TAGS TAXONOMY ? 
 insert ignore into wp_term_taxonomy(term_id, taxonomy, description, parent, count)
 select distinct
@@ -154,6 +149,50 @@ where enrRelationID = 20
 		)x	
 	)
 order by entPublished asc;
+
+
+
+/*
+CLEAR ALL USERS !
+
+SET SQL_SAFE_UPDATES=0;
+delete
+from wp_usermeta
+where user_id 
+	in (
+		(select ID
+		from wp_users
+		where !( user_login like '%admin%' or  user_login like '%developer%'))
+	)
+
+
+SET SQL_SAFE_UPDATES=0;
+delete 
+from wp_users
+where !( user_login like '%admin%' or  user_login like '%developer%')
+*/
+
+
+DROP TABLE contentdb_161.Users;
+CREATE TABLE contentdb_161.Users
+(
+wusUserID int
+,	wusLogin nvarchar(200)
+,wusProfileID int
+,wusDescription	nvarchar(200)
+,wusEMail nvarchar(200)
+,wusCreated	datetime
+,wusActiveFL int
+,wusShortName nvarchar(200)
+);
+
+# CSV SHOULD EXISTS!!!!
+LOAD DATA LOCAL INFILE 'C:/Users/Argiris/Desktop/all_users_news.csv' 
+INTO TABLE contentdb_161.Users 
+FIELDS TERMINATED BY ';' ENCLOSED BY '"' LINES TERMINATED BY '\n';
+
+
+
 
 /*
 

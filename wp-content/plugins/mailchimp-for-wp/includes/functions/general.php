@@ -39,6 +39,9 @@ function mc4wp_get_options( $key = '' ) {
 				'show_at_edd_checkout' => 0,
 				'lists' => array(),
 				'double_optin' => 1,
+				'update_existing' => 0,
+				'replace_interests' => 1,
+				'send_welcome' => 0,
 				'woocommerce_position' => 'order',
 			),
 			'form' => array(
@@ -52,11 +55,11 @@ function mc4wp_get_options( $key = '' ) {
 				'text_required_field_missing' => __( 'Please fill in the required fields.', 'mailchimp-for-wp' ),
 				'redirect' => '',
 				'lists' => array(),
-				'double_optin' => 1,
 				'hide_after_success' => 0,
-				'update_existing' => false,
-				'replace_interests' => true,
-				'send_welcome' => false,
+				'double_optin' => 1,
+				'update_existing' => 0,
+				'replace_interests' => 1,
+				'send_welcome' => 0,
 			),
 		);
 
@@ -92,6 +95,5 @@ function mc4wp_get_options( $key = '' ) {
 * @return MC4WP_API
 */
 function mc4wp_get_api() {
-	global $mc4wp;
-	return $mc4wp->get_api();
+	return MC4WP_Lite::instance()->get_api();
 }
