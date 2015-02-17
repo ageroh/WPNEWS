@@ -76,8 +76,11 @@ if (have_posts()) : while (have_posts()) : the_post();
             echo pp_substr(strip_tags(strip_shortcodes(get_the_content())), 120);
         ?>
     	<div class="post_detail large_space">
-	    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp;
+	    	<?php echo get_the_time(THEMEDATEFORMAT); ?>
 	    	<?php
+	    		/* 
+				Custom: ARG. 17/02/2015 : remove post Author
+
 	    		$author_firstname = get_the_author_meta('first_name', $post->post_author);
 	    		$author_lastname = get_the_author_meta('last_name', $post->post_author);
 				$author_url = get_author_posts_url($post->post_author);
@@ -88,6 +91,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<?php echo _e( 'By', THEMEDOMAIN ); ?>&nbsp;<a href="<?php echo $author_url; ?>"><?php echo $author_firstname; ?>&nbsp;<?php echo $author_lastname; ?></a>
 			<?php
 				}
+				*/
 	    	?>
 	    	<?php 
 	    	if(comments_open(get_the_ID()))

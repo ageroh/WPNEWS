@@ -33,8 +33,12 @@
                                     where wusUserID <> 0
                                     order by wusShortName ;
                                     ");
-
   echo "Try get results..";
+  if (!$results) {
+      printf("Error: %s\n", mysqli_error($conn));
+      exit();
+  }
+
 
   $i = 0;
 
@@ -85,7 +89,7 @@
             'user_nicename'   =>  $user['wusShortName'] ,
             'user_registered' =>  $user['wusCreated'],
             'display_name'    =>  substr($user['wusDescription'] , strpos($user['wusDescription'], " ")),
-            'role'            =>  ($user['wusActiveFL']==1 ? 'Contributor' : NULL), 
+            'role'            =>  ($user['wusActiveFL'] == 1 ? "contributor" : "None"), 
             'user_pass'       =>  $user_pass_rand
       );
 

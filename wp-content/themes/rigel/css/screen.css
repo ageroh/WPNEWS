@@ -828,7 +828,7 @@ h3#reply-title
 {
 	margin-top: 10px;
 	color: #999;
-	text-transform: uppercase;
+	text-transform: none;
 	font-size: 14px;
 }
 
@@ -6307,3 +6307,4 @@ a.skin_box
 	padding: 3px 0 3px 0;
 	margin: 0 0 5px 0;
 }
+

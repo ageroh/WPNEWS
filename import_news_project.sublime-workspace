@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"entP",
+				"entPublished"
+			],
+			[
+				"Datetim",
+				"DateTime〔class〕"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"import",
+				"import_id"
+			],
+			[
 				"wi",
 				"width"
 			],
@@ -52,51 +68,58 @@
 	"buffers":
 	[
 		{
-			"file": "news_import_posts.php",
+			"file": "wp-content/themes/rigel/footer.php",
 			"settings":
 			{
-				"buffer_size": 6694,
+				"buffer_size": 2249,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "news_import_photos.php",
+			"file": "wp-content/themes/rigel/category-2-columns.php",
 			"settings":
 			{
-				"buffer_size": 4695,
-				"line_ending": "Windows"
+				"buffer_size": 2046,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "news_import_posts_v2.php",
+			"file": "/C/Users/Argiris/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 6042,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/test.php",
-			"settings":
-			{
-				"buffer_size": 568,
-				"line_ending": "Windows",
-				"name": "<?php"
+				"buffer_size": 168,
+				"line_ending": "Unix"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 81.0,
+		"height": 311.0,
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			],
+			[
 				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install p",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -117,53 +140,77 @@
 	},
 	"expanded_folders":
 	[
+		"/T/Websites/WP/wp-content/themes/rigel"
 	],
 	"file_history":
 	[
-		"/T/Websites/WP/news_import_posts.php",
-		"/T/Websites/WP/news_import_photos.php",
-		"/T/Websites/WP/wp-content/themes/rigel/404.php",
-		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/news_import_posts.php",
-		"/T/Websites/WP/wp-content/themes/rigel/css/custom_script.css",
-		"/T/Websites/WP/wp-content/themes/rigel/header.php",
-		"/T/Websites/WP/wp-content/themes/rigel/functions.php",
-		"/T/Websites/WP/wp-content/themes/rigel/functions/style.css",
-		"/T/Websites/WP/wp-content/themes/rigel/archive.php",
-		"/T/Websites/WP/wp-content/themes/rigel/author.php",
-		"/T/Websites/WP/wp-content/themes/rigel/category.php",
-		"/T/Websites/WP/wp-content/themes/rigel/category-1-column.php",
+		"/C/Users/Argiris/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/T/Websites/WP/wp-content/themes/rigel/category-1-column-search.php",
-		"/T/Websites/WP/wp-content/themes/rigel/category-2-columns.php",
-		"/T/Websites/WP/wp-content/themes/rigel/category-2-columns-nodesc.php",
+		"/T/Websites/WP/wp-content/themes/rigel/category-1-column.php",
+		"/T/Websites/WP/wp-content/themes/rigel/404.php",
+		"/T/Websites/WP/SEQUENCE OF IMPORT EXECUTION STEPS.txt",
+		"/T/Websites/WP/wp-content/plugins/reEmbed_plugin/reembedscript.php",
+		"/T/Websites/WP/wp-content/plugins/reEmbed_plugin/optionsPage.php",
+		"/T/Websites/WP/wp-content/themes/rigel/functions.php",
+		"/T/Websites/WP/wp-content/themes/rigel/single.php",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/stocksWidgetXML.xslt",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/stocksWidgetXML.sql",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/stocksWidget.xslt",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/stocksWidget.sql",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/StocksIndex.xslt",
+		"/C/Users/Argiris/Documents/newsbeast-news-XA-page-widget/stocksIndex.sql",
+		"/T/Websites/WP/news_import_posts.php",
+		"/T/Websites/WP/wp-content/themes/rigel/sidebar.php",
+		"/T/Websites/WP/wp-content/themes/rigel/single-left-sidebar.php",
+		"/T/Websites/WP/wp-content/themes/rigel/single-sidebar.php",
+		"/T/Websites/WP/wp-content/themes/rigel/single-fullwidth.php",
+		"/T/Websites/WP/news_import_photos_v2.php",
+		"/T/Websites/WP/news_import_Users.php",
+		"/C/Users/Argiris/Desktop/all_users_news.csv",
+		"/T/Websites/WP/wp-config.php",
+		"/T/Websites/WP/wp-content/themes/rigel/languages/en_US.po",
+		"/T/Websites/WP/errorLog.txt",
+		"/C/Users/Argiris/Desktop/News.dll",
+		"/T/Websites/WP/wp-content/themes/rigel/tag.php",
+		"/T/Websites/WP/wp-content/themes/rigel/page_sidebar.php",
+		"/T/Websites/WP/wp-content/themes/rigel/page.php",
+		"/T/Websites/WP/wp-content/themes/rigel/page_fullwidth.php",
 		"/T/Websites/WP/wp-content/themes/rigel/category-3-columns.php",
-		"/T/Websites/WP/wp-content/themes/rigel/comments.php",
+		"/T/Websites/WP/wp-content/themes/rigel/default_settings.php",
 		"/T/Websites/WP/wp-content/themes/rigel/contact.php",
 		"/T/Websites/WP/wp-content/themes/rigel/footer.php",
-		"/T/Websites/WP/wp-content/themes/rigel/default_settings.php",
 		"/T/Websites/WP/wp-content/themes/rigel/gallery.php",
-		"/T/Websites/WP/wp-content/themes/rigel/search.php",
-		"/T/Websites/WP/wp-content/themes/rigel/sidebar.php",
-		"/T/Websites/WP/wp-content/themes/rigel/single.php",
-		"/T/Websites/WP/wp-content/themes/rigel/single-fullwidth.php",
-		"/T/Websites/WP/wp-content/themes/rigel/single-left-sidebar.php",
-		"/T/Websites/WP/wp-content/themes/rigel/sitemap.php",
-		"/T/Websites/WP/wp-content/themes/rigel/switcher.php",
-		"/T/Websites/WP/wp-content/themes/rigel/tag.php",
-		"/T/Websites/WP/wp-content/themes/rigel/woocommerce.php",
-		"/T/Websites/WP/wp-content/themes/rigel/single-sidebar.php",
 		"/T/Websites/WP/wp-content/themes/rigel/google-analytic.php",
 		"/T/Websites/WP/wp-content/themes/rigel/imageFlowXML.php",
 		"/T/Websites/WP/wp-content/themes/rigel/index.php",
-		"/T/Websites/WP/wp-content/themes/rigel/page.php",
-		"/T/Websites/WP/wp-content/themes/rigel/page_fullwidth.php",
-		"/T/Websites/WP/wp-content/themes/rigel/page_sidebar.php",
+		"/T/Websites/WP/wp-content/themes/rigel/header.php",
+		"/T/Websites/WP/wp-content/themes/rigel/search.php",
+		"/T/Websites/WP/wp-content/themes/rigel/sitemap.php",
+		"/T/Websites/WP/wp-content/themes/rigel/switcher.php",
+		"/T/Websites/WP/wp-content/themes/rigel/archive.php",
+		"/T/Websites/WP/wp-content/themes/rigel/author.php",
+		"/T/Websites/WP/wp-content/themes/rigel/category.php",
+		"/T/Websites/WP/wp-content/themes/rigel/lib/admin-default.lib.php",
+		"/T/Websites/WP/wp-content/themes/rigel/comments.php",
+		"/T/Websites/WP/wp-content/themes/rigel/templates/custom-css-dynamic.php",
+		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/test.php",
+		"/T/Websites/WP/wp-content/themes/rigel/category-2-columns.php",
+		"/T/Websites/WP/wp-content/themes/rigel/category-2-columns-nodesc.php",
+		"/T/Websites/WP/wp-load.php",
+		"/T/Websites/WP/import_news_project.sublime-project",
+		"/T/Websites/WP/news_import_posts_v2.php",
+		"/T/Websites/WP/news_import_photos.php",
+		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/news_import_posts.php",
+		"/T/Websites/WP/wp-content/themes/rigel/css/custom_script.css",
+		"/T/Websites/WP/wp-content/themes/rigel/functions/style.css",
+		"/T/Websites/WP/wp-content/themes/rigel/woocommerce.php",
 		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/news_import_photos.php",
 		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/news_import_categories.php",
 		"/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/news_import_tags.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -178,6 +225,43 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"theme",
+			"by",
+			"allAttachments",
+			"file_put_contents",
+			"contentdb_161.",
+			"contentdb_161.wp_users",
+			"<?php\n\n  error_reporting(E_ALL);\n  ini_set('display_errors', 'on');\n  ini_set('default_socket_timeout', -1);\n  ini_set('MAX_EXECUTION_TIME', -1);\n\n\n  $servername = \"localhost\";\n  $username = \"admin\";\n  $password = \"123!@#456$%^\";\n\n  /**\n  INSERT TAGS FOR POSTS !\n  */\n\n\n  $conn=mysqli_connect(\"localhost\",$username, $password, \"ContentDB_161\");\n  // Check connection\n  if (mysqli_connect_errno())\n  {\n    echo \"Failed to connect to MySQL: \" . mysqli_connect_error();\n    writeLog(mysqli_connect_error());\n    return;\n  }\n  // Try add tags \n\n\n  writeLog(\"Try get all results from DB for USERS.\");\n\n  $results = mysqli_query($conn, \"\n                                    select * from contentdb_161.Users\n                                    where wusUserID <> 0\n                                    order by wusShortName ;\n                                    \");\n\n  echo \"Try get results..\";\n\n  $i = 0;\n\n  while ($row = mysqli_fetch_array($results, MYSQL_ASSOC)) \n  {\n    $user = array();\n    $user['wusLogin'] = $row['wusLogin'];\n    $user['wusDescription'] = $row['wusDescription'];\n    $user['wusEMail'] = $row['wusEMail'];\n    $user['wusCreated'] = $row['wusCreated'];\n    $user['wusActiveFL'] = $row['wusActiveFL'];\n    $user['wusShortName'] = $row['wusShortName'];\n    $users[$i] = $user;\n    $i++;\n  }\n\n  writeLog(\"All USERS collected from MSSQL.\");\n\n  mysqli_free_result($results);\n  mysqli_close ($conn);\n\n  require('./wp-load.php');\n  $tot = $i-1;\n\n  echo \"<br/>Start inserting total USERS: \". $tot;\n  writeLog(\"Start inserting total USERS: \". $tot );\n\n  foreach ($users as $user) \n  {\n\n    if( empty($user['wusEMail']) )\n      $user_email = $user['wusLogin'] .\"@news.gr\";\n    else    \n      $user_email = $user['wusEMail'];\n\n    $user_id = username_exists( $user_email );\n    if ( !$user_id and email_exists( $user_email ) == false ) \n    {\n\n      // create an auto passwd\n      $user_pass_rand = wp_generate_password( $length=12, $include_standard_special_chars=false );  // When creating an user, `user_pass` is expected.\n\n      $userdata = array(\n            'user_login'      =>  $user['wusLogin'] ,     // user_name\n            'first_name'      =>  substr($user['wusDescription'], 0, strpos($user['wusDescription'], \" \")),\n            'last_name'       =>  substr($user['wusDescription'] , strpos($user['wusDescription'], \" \")),\n            'user_email'      =>  $user_email,\n            'user_nicename'   =>  $user['wusShortName'] ,\n            'user_registered' =>  $user['wusCreated'],\n            'display_name'    =>  substr($user['wusDescription'] , strpos($user['wusDescription'], \" \")),\n            'role'            =>  ($user['wusActiveFL']==1? 'contributor' : NULL), \n            'user_pass'       =>  $user_pass_rand\n      );\n\n      $user_id = wp_insert_user( $userdata ) ;    \n\n      //On success\n      if( !is_wp_error($user_id) ) {\n        writeLog(\"User created OK,  username: \". $user_name . \" passwrod: \" . $user_pass_rand);\n        echo \"User created : \". $user_id;\n      } \n      else\n        echo $wp_error->get_error_message();\n    }\n\n  }\n\n\n  echo \"<br/>Finished inserting USERS successfully. \";\n  writeLog(\"Finished inserting USERS successfully\");\n\n  die();\n\n\n  function writeLog($data)\n  {\n    file_put_contents(  $_SERVER['DOCUMENT_ROOT'] . \"\\\\errorLog.txt\" ,  date(\"Y-m-d H:i:s\"). \" -> \" . $data . \"\\n\", FILE_APPEND );\n  }\n\n\n?>	\n\n",
+			"relat",
+			"relate",
+			"article-subtitle",
+			"slugify",
+			"title",
+			"post[",
+			"DISALLOW_FILE_EDIT",
+			"smashing_post_meta_boxes_setup",
+			"smashing_post_class",
+			"smashing-post-class",
+			"post_title",
+			"select ",
+			".html",
+			"sanitize_title",
+			"Περισσ",
+			"περισσ",
+			"rewrit",
+			"tag_cloud",
+			"topic_count_text_callback",
+			"wp_tag_cloud",
+			"tag_cloud",
+			"ag_cloud",
+			"wp_tag_cloud",
+			"req",
+			"writeLog",
+			"set_post_thumbnail",
+			"upload_dir",
+			"flush",
+			"req",
+			"fl",
 			"post_id",
 			"$keys as",
 			"$keys as $key",
@@ -219,16 +303,55 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "news_import_posts.php",
-					"semi_transient": false,
+					"file": "wp-content/themes/rigel/footer.php",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 6694,
+						"buffer_size": 2249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/rigel/category-2-columns.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2046,
 						"regions":
 						{
 						},
@@ -242,8 +365,7 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -253,92 +375,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "news_import_photos.php",
+					"buffer": 2,
+					"file": "/C/Users/Argiris/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4695,
+						"buffer_size": 168,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								4695
+								97,
+								97
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "news_import_posts_v2.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6042,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								852,
-								852
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 405.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/T/inetpub/wwwroot/test.pos.gr/wordpress-news-beta-migration-2/test.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 568,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								272,
-								284
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -346,7 +408,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -359,18 +421,32 @@
 			[
 				0,
 				0,
-				1,
+				2,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.457849020391,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
+			0.0742331288348,
 			1.0
 		]
 	},
@@ -379,10 +455,14 @@
 	{
 		"height": 0.0
 	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
 	"project": "import_news_project.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -409,19 +489,69 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 2,
 	"settings":
 	{
 		"xdebug":
 		{
-			"hide_conflict": false
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"48":
+				{
+					"group": 0,
+					"index": 3
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
 		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 294.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

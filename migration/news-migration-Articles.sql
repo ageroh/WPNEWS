@@ -151,6 +151,14 @@ where enrRelationID = 20
 order by entPublished asc;
 
 
+/*
+select *
+from wp_users where user_login = 'Anastasia'
+
+select *
+from wp_usermeta
+where user_id= 40
+*/
 
 /*
 CLEAR ALL USERS !
@@ -163,13 +171,13 @@ where user_id
 		(select ID
 		from wp_users
 		where !( user_login like '%admin%' or  user_login like '%developer%'))
-	)
+	);
 
 
 SET SQL_SAFE_UPDATES=0;
 delete 
 from wp_users
-where !( user_login like '%admin%' or  user_login like '%developer%')
+where !( user_login like '%admin%' or  user_login like '%developer%');
 */
 
 

@@ -78,9 +78,29 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 					    </div>
 				<?php
 				        }
+				    break;
+				    
+				    // Custom. ARG. 17/02/2015: add custom image template for articles which have Youtube/Vimeo related video
+				    // 							show video normal size in the end of Content along with the image of Article.   
+				    case 'Custom NEWS':
+			         	$image_thumb = '';
+											
+						if(!empty($pp_blog_single_ft_image) && has_post_thumbnail(get_the_ID(), 'blog_single_full'))
+						{
+						    $image_id = get_post_thumbnail_id(get_the_ID());
+						    $image_thumb = wp_get_attachment_image_src($image_id, 'blog_single_full', true);
+						}
 				?>
 				<?php
-					break;
+				        if(!empty($image_thumb))
+				        {
+				?>
+					    <div class="post_img fullwidth" style="width:<?php echo $image_thumb[1]; ?>px;height:<?php echo $image_thumb[2]; ?>px">
+					        <img src="<?php echo $image_thumb[0]; ?>" alt="" class="entry_post"/>
+					    </div>
+				<?php
+				        }
+				     break;
 					
 					case 'Standard Vimeo Video':
 			         	$post_ft_vimeo = get_post_meta($post->ID, 'post_ft_vimeo', true);
@@ -182,13 +202,24 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 					<h2 class="subtitle">
 					<?php
 						// A.GEROGIANNIS ADD BOX Subtitle
-						echo get_post_meta($post->ID,'Subtitle', true);
+						echo get_post_meta($post->ID,'_subtitle_Custom', true);
 					?>
 					</h2>
 				</div>
 				<div class="post_detail">
-			    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp;
-			    	<?php
+			    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp;  TRALALA ARGI
+
+					<?php 
+						/* Custom: ARG. 17/02/2015 : show category link */
+						$category = get_the_category(); 
+						if($category[0]){
+						echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+						}
+					?>
+
+			    	<?php /* Remove Editor Name from Articles 
+			    	 	Custom: ARG. 17/02/2015 : show category link 
+
 			    		$author_firstname = get_the_author_meta('first_name', $post->post_author);
 			    		$author_lastname = get_the_author_meta('last_name', $post->post_author);
 						$author_url = get_author_posts_url($post->post_author);
@@ -199,7 +230,8 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 						<?php echo _e( 'By', THEMEDOMAIN ); ?>&nbsp;<a href="<?php echo $author_url; ?>"><?php echo $author_firstname; ?>&nbsp;<?php echo $author_lastname; ?></a>
 					<?php
 						}
-			    	?>
+			    	*/ ?>
+
 			    	<?php 
 			    	if(comments_open(get_the_ID()))
 					{
@@ -250,6 +282,31 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 									<div class="post_inner_wrapper">
 								        
 										<?php the_content(); ?>
+										<?php 
+										// Custom. ARG. 17/02/2015
+										// Add iframe video related to article if exists.
+										if( $post_ft_type == 'Custom NEWS')
+										{
+
+			         						$post_ft_vimeo = get_post_meta($post->ID, 'post_ft_vimeo', true);
+			         						if( $post_ft_vimeo != null)
+			         						{
+			         							?>
+			         							<iframe src="//player.vimeo.com/video/<?php echo $post_ft_vimeo; ?>?title=0&amp;byline=0&amp;portrait=0" width="620" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			         							<?php
+			         						}
+
+											$post_ft_youtube = get_post_meta($post->ID, 'post_ft_youtube', true);
+			         						if( $post_ft_youtube != null)
+			         						{
+			         							?>
+			         							<iframe width="620" height="349" 
+			         								src="//www.youtube.com/embed/<?php echo $post_ft_youtube; ?>?wmode=transparent&amp;rel=0&amp;autohide=1&amp;egm=0&amp;hd=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;showinfo=0&amp;showsearch=0" frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+			         							<?php
+			         						}
+			         					}
+										?>
+
 										<div style="height:15px;"></div>
 										
 										<?php
@@ -468,8 +525,18 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 										    		</div>
 										    	</div>
 										    	<div class="post_detail half">
-											    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp;
-											    	<?php
+											    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp; 
+													<?php 
+														/* Custom: ARG. 17/02/2015 : show category link */
+														$category = get_the_category(); 
+														if($category[0]){
+														echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+														}
+													?>
+
+											    	<?php /* Remove Editor Name from Articles 
+											    	 	Custom: ARG. 17/02/2015 : show category link 
+
 											    		$author_firstname = get_the_author_meta('first_name', $post->post_author);
 											    		$author_lastname = get_the_author_meta('last_name', $post->post_author);
 														$author_url = get_author_posts_url($post->post_author);
@@ -480,7 +547,8 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 														<?php echo _e( 'By', THEMEDOMAIN ); ?>&nbsp;<a href="<?php echo $author_url; ?>"><?php echo $author_firstname; ?>&nbsp;<?php echo $author_lastname; ?></a>
 													<?php
 														}
-											    	?>
+											    	*/ ?>											    	
+	
 											    	<?php 
 											    	if(comments_open(get_the_ID()))
 													{

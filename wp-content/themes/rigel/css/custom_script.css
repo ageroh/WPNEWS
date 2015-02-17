@@ -8,4 +8,10 @@
 
 .post_inner_wrapper p{font-size:1.3em}/*Article font size*/
 
-
+.navmenuImportant span {
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	background: red;
+}

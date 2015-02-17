@@ -52,8 +52,12 @@ $results = mysqli_query($conn, "
                       INNER JOIN contentdb_161.category cat 
                         ON cat.catCategoryID = catEntCon.caeCategoryID
                       order by cut.row_number asc; ");
-
 echo "<br/> Try get results..";
+if (!$results) {
+    printf("Error: %s\n", mysqli_error($conn));
+    exit();
+}
+
 
 $i = 0;
 
@@ -68,8 +72,6 @@ while ($row = mysqli_fetch_array($results, MYSQL_ASSOC))
 
   $i++;
 }
-
-
 
 mysqli_free_result($results);
 mysqli_close ($conn);
@@ -109,7 +111,7 @@ foreach ( $allPosts as $post )
     $filename =  $item["_thumbnail_id"] . ".jpg";
 
     // check if image already exists on Server 
-    if( file_exists( $file ) ) 
+    /*if( file_exists( $file ) ) 
     {
       // No Need to get and upload the filename, just attach it to post.
       if( $allAttachments != null)
@@ -130,7 +132,7 @@ foreach ( $allPosts as $post )
     }  
     else
     {
-
+*/
      
       $image_url = $_SERVER['DOCUMENT_ROOT'] . "\\tempNewsMig.jpg";
       $url = 'http://air.news.gr/cov/' .$item["thumb_2"] . '/' . $item["_thumbnail_id"] . '_b1.jpg' ;      // fetch the greatest image from HTTP.
@@ -158,7 +160,12 @@ foreach ( $allPosts as $post )
       }
 
 
-      file_put_contents($image_url, $dataImg, LOCK_EX);
+      $ckwrite = file_put_contents($image_url, $dataImg, LOCK_EX);
+      if($ckwrite==false)
+      {
+        writeLog("ERROR: Writing to temp file : " . $image_url );
+        return;
+      }
 
       echo "<br/> Get:  " . $url;
       writeLog("Get : " . $url ."\n");
@@ -171,7 +178,13 @@ foreach ( $allPosts as $post )
       
       print_r("<br/> Actual file to upload : " . $file);
       writeLog(" Actual file to upload : " . $file ."\n");
-      file_put_contents($file, $image_data);
+      $ckwrite = file_put_contents($file, $image_data, LOCK_EX);
+      if($ckwrite==false)
+      {
+        writeLog("ERROR: Writing to PROD file : " . $file );
+        return;
+      }
+
 
       $wp_filetype = wp_check_filetype($filename, null );
       $attachment = array(
@@ -189,8 +202,9 @@ foreach ( $allPosts as $post )
       set_post_thumbnail( $post->ID, $attach_id );
       writeLog("Attached ".$attach_id." to post : " . $post->ID ."\n");
 
-      $exists = false;
+      //$exists = false;
       // check if attach_id is already inserted to table.
+      /*
       foreach ($allAttachments as $atmnt) {
         if($atmnt["attach_id"] ==  $attach_id  && $atmnt["file"] == $file)
         {
@@ -204,20 +218,24 @@ foreach ( $allPosts as $post )
       {
         // keep in a table the post, media attachement's id, 
         $att = array();
-        $att["id"] =  $j;
         $att["post_id"] = $post->ID;
         $att["file"] = $file;
         $att["attach_id"] = $attach_id;
         $allAttachments[$j] = $att;
         $j++;
       }
+      */
 
-    }
+    //}
     wp_reset_postdata();
     
     echo "<br/> Image attached ok.";
-
 } 
+
+//foreach ($allAttachments as $am) {
+//  echo "<br/> attach_id:" . $am['attach_id'] . " post_id:" . $am['post_id'] . " file:" . $am['file'];
+
+}
 echo "<br/> Finished uploading all Images for Articles.";
 writeLog("Finished uploading all Images for Articles.\n");
 

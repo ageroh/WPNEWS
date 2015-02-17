@@ -750,11 +750,11 @@ function news_custom_save_post_class_meta( $post_id, $post, $meta_key ) {
 Add a custom CSS and JS on HEADER 
 */
 // Add custom CSS Class to BODY
-function my_plugin_body_class($classes) {
-    $classes[] = 'fooARGI';
-    return $classes;
-}
-add_filter('body_class', 'my_plugin_body_class');
+//function my_plugin_body_class($classes) {
+//    $classes[] = 'fooARGI';
+//    return $classes;
+//}
+//add_filter('body_class', 'my_plugin_body_class');
 
 // Add some JS to header 
 function wptuts_scripts_load_cdn()
@@ -782,17 +782,56 @@ add_action( 'wp_enqueue_scripts', 'wptuts_scripts_load_cdn' );
 add_action('wp_head', 'wpse_Importantheader_wp_head');
 function wpse_Importantheader_wp_head(){
 
-	wp_nav_menu(
-	    array(
-		'menu' => 'ImportantHeader'
-		// do not fall back to first non-empty menu
-		, 'theme_location' => '__no_such_location'
-		// do not fall back to wp_page_menu()
-		, 'fallback_cb' => false
-		, 'container_class' => 'navmenuImportant'
-	  )
-	);
+	?> 
+	<div class="navmenuImportant">
+		<span>ΣΗΜΑΝΤΙΚΑ</span>
+		<?php
+		wp_nav_menu(
+		    array(
+			'menu' => 'ImportantHeader'
+			// do not fall back to first non-empty menu
+			, 'theme_location' => '__no_such_location'
+			// do not fall back to wp_page_menu()
+			, 'fallback_cb' => false
+			//, 'container_class' => 'navmenuImportant'
+		  )
+		);
+		?>
+	</div>	
+	<?php
 	
+}
+
+
+/**
+	Add A custom Widget inside all Categories 
+	NOT USED..
+*/
+add_action( 'widgets_init', 'category_sidebars' );
+/**
+ * Create widgetized sidebars for each category
+ *
+ * This function is attached to the 'widgets_init' action hook.
+ *
+ * @uses	register_sidebar()
+ * @uses	get_categories()
+ * @uses	get_cat_name()
+ */
+function category_sidebars() {
+	$categories = get_categories( array( 'hide_empty'=> 0 ) );
+
+	foreach ( $categories as $category ) {
+		if ( 0 == $category->parent )
+			register_sidebar( array(
+				'name' => $category->cat_name,
+				'id' => $category->category_nicename . '-sidebar',
+				'description' => 'This is the ' . $category->cat_name . ' widgetized area',
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget' => '</aside>',
+				'before_title' => '<h3 class="widget-title">',
+				'after_title' => '</h3>',
+			) );
+	}
 }
 
 

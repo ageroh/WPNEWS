@@ -411,7 +411,14 @@ function pp_posts($sort = 'recent', $items = 3, $echo = TRUE, $show_thumb = TRUE
 			    	$return_html.= ' full';
 		    	}
 		    	$return_html.= '">'.get_the_time(THEMEDATEFORMAT, $post->ID);
-		    	
+
+				// Custom. ARG. Add category in sidebar		    	
+   				$categoryCustom = get_the_category($post->ID); 
+				if($categoryCustom[0]){
+					$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+				}
+
+
 		    	if(comments_open($post->ID))
 				{
 				    $return_html.= '<div class="post_comment_count"><a href="'.get_permalink($post->ID).'" title="'.$post->post_title.'"><i class="fa fa-comments-o"></i>'.get_comments_number($post->ID);
@@ -761,6 +768,12 @@ function pp_cat_posts($cat_id = '', $items = 5, $echo = TRUE, $show_thumb = TRUE
 			    	$return_html.= ' full';
 		    	}
 		    	$return_html.= '">'.get_the_time(THEMEDATEFORMAT, $post->ID);
+
+		    	// Custom. ARG. Add category in sidebar		    	
+   				$categoryCustom = get_the_category($post->ID); 
+				if($categoryCustom[0]){
+					$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+				}
 		    	
 		    	if(comments_open($post->ID))
 				{

@@ -35,8 +35,8 @@ writeLog("Try get all results from DB for POSTS. Limit set to " . $limit);
 
 echo "<br/> Connection successfully to MySQL.";
 $results = mysqli_query($conn, "
-                              SELECT 
-                                    e.ententityid as ID
+                               SELECT 
+                                  e.ententityid as ID
                                   , (SELECT avaValue FROM contentdb_161.ValueText WHERE (avaEntityID = e.ententityid) AND (avaLanguageID = 1) AND avaSatID = 13) as BODY
                                   , (SELECT avaValue FROM contentdb_161.ValueString WHERE (avaEntityID = e.ententityid) AND (avaLanguageID = 1) AND (avaSatID = 10)) as TITLE
                                   , (select contentdb_161.iGetEntityThirdCategoryID(e.ententityid)) as catID3
@@ -55,28 +55,32 @@ $results = mysqli_query($conn, "
                                   , catMETAKeywords
                                   , substring(substring_index(entURL,'/',-1), 1, LOCATE('.html', substring_index(entURL,'/',-1))-1) as slugFriendlyNews
                                   , wp_users.ID as UserID
-                              FROM   contentdb_161.entity e
-                              INNER join
+                                FROM   contentdb_161.entity e
+                                INNER join
                                 ( SELECT  ententityid,
-                                    @curRow := @curRow + 1 AS row_number
+                                  @curRow := @curRow + 1 AS row_number
                                 FROM    contentdb_161.entity l
                                 JOIN    (SELECT @curRow := 0) r
                                 WHERE entstatusid = 3 AND entEntityTypeID IN ( 1 ) 
                                 ORDER BY entPublished DESC
-                                LIMIT " . $limit . ") cut
+                                LIMIT ". $limit . ") cut
                                   ON cut.ententityid = e.ententityid
-                              INNER JOIN contentdb_161.category_entity catEntCon
-                                ON catEntCon.caeentityid = e.ententityid 
-                              INNER JOIN contentdb_161.category cat 
-                                ON cat.catCategoryID = catEntCon.caeCategoryID
-                              LEFT JOIN contentdb_161.Users
+                                INNER JOIN contentdb_161.category_entity catEntCon
+                                  ON catEntCon.caeentityid = e.ententityid 
+                                INNER JOIN contentdb_161.category cat 
+                                  ON cat.catCategoryID = catEntCon.caeCategoryID
+                                LEFT JOIN contentdb_161.Users
                                 ON Users.wusUserID = entCreatedBy
                                    and  wusUserID <> 0
-                              LEFT JOIN wp_users
-                                ON wp_users.user_nicename = Users.wusShortName
-                              order by cut.row_number asc;");
+                                LEFT JOIN wordpressdb.wp_users
+                                  ON wp_users.user_login = Users.wusLogin
+                                order by cut.row_number asc;
+                              ");
 
-
+if (!$results) {
+    printf("Error: %s\n", mysqli_error($conn));
+    exit();
+}
 
 $i = 0;
 

@@ -160,8 +160,8 @@ function ppb_classic_blog_func($atts, $content) {
 			$return_html.= '<p>'.pp_substr(strip_tags(strip_shortcodes($post->post_content)), 250).'</p>';
 			$return_html.= '<div class="post_detail half grey space">';
 			
-			$return_html.= date(THEMEDATEFORMAT, strtotime($post->post_date));
-			
+			$return_html.= date(THEMEDATEFORMAT, strtotime($post->post_date)); 
+
 			$author_firstname = get_the_author_meta('first_name', $post->post_author);
 			$author_url = get_author_posts_url($post->post_author);
 			
@@ -362,7 +362,14 @@ function ppb_category_carousel_func($atts, $content) {
 	    	
 	    	$return_html.= '<strong class="title"><a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a></strong><br/>';
 	    	$return_html.= '<span class="post_attribute full">'.date(THEMEDATEFORMAT, strtotime($post->post_date));
-	    	
+
+	    	// Custom. ARG. : 17/02/2015 Remove Author, add category name.
+			$categoryCustom = get_the_category($post->ID); 
+			if($categoryCustom[0]){
+				$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+			}
+
+			/*
 	    	$author_firstname = get_the_author_meta('first_name', $post->post_author);
 			$author_url = get_author_posts_url($post->post_author);
 			
@@ -370,6 +377,7 @@ function ppb_category_carousel_func($atts, $content) {
 			{
 				$return_html.= '&nbsp;'.__( 'By', THEMEDOMAIN ).'&nbsp;<a href="'.$author_url.'">'.$author_firstname.'</a>';
 			}
+			*/
 			
 			if(comments_open($post->ID))
 			{
@@ -1140,7 +1148,7 @@ function ppb_parallax_bg_func($atts, $content) {
 	}
 	
 	$return_html = '';
-	$return_html.= '<div class="'.$size.' ppb_parallax_bg" ';
+	$return_html.= 'TEST <div class="'.$size.' ppb_parallax_bg" ';
 	
 	if(!empty($background))
 	{
@@ -1643,7 +1651,14 @@ function ppb_categories_sidebar_func($atts, $content) {
 					$return_html.= '<div class="post_detail half grey space">';
 					
 					$return_html.= date(THEMEDATEFORMAT, strtotime($post->post_date));
-					
+
+					// Custom: ARG. 17/02/2015 Remove Author name, add first Category found instead.
+					$categoryCustom = get_the_category($post->ID); 
+					if($categoryCustom[0]){
+						$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+					}
+
+					/*
 					$author_firstname = get_the_author_meta('first_name', $post->post_author);
 					$author_url = get_author_posts_url($post->post_author);
 					
@@ -1651,6 +1666,8 @@ function ppb_categories_sidebar_func($atts, $content) {
 					{
 						$return_html.= '&nbsp;'.__( 'By', THEMEDOMAIN ).' <a href="'.$author_url.'">'.$author_firstname.'</a>';
 					}
+					*/
+					// Custom: ARG. END
 					
 					if(comments_open($post->ID))
 					{

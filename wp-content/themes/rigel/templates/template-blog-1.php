@@ -77,8 +77,10 @@ if (have_posts()) : while (have_posts()) : the_post();
     	</div>
     	
     	<div class="post_detail large_space">
-	    	<a href="<?php the_permalink(); ?>"><?php echo get_the_time(THEMEDATEFORMAT); ?></a>&nbsp;
-	    	<?php
+	    	<a href="<?php the_permalink(); ?>"><?php echo get_the_time(THEMEDATEFORMAT); ?></a>
+	    	<?php 
+	    	/*	Custom: ARG. 17/02/2015 : remove post Author
+
 	    		$author_firstname = get_the_author_meta('first_name', $post->post_author);
 	    		$author_lastname = get_the_author_meta('last_name', $post->post_author);
 				$author_url = get_author_posts_url($post->post_author);
@@ -89,6 +91,7 @@ if (have_posts()) : while (have_posts()) : the_post();
 				<?php echo _e( 'By', THEMEDOMAIN ); ?>&nbsp;<a href="<?php echo $author_url; ?>"><?php echo $author_firstname; ?>&nbsp;<?php echo $author_lastname; ?></a>
 			<?php
 				}
+			*/
 	    	?>
 	    	<?php
 			    //Get Post's Categories

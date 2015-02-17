@@ -95,6 +95,7 @@ $postmetas =
     		"section" => "Featured Content Type", "id" => "post_ft_type", "type" => "select", "title" => "Featured Content Type", "description" => "Select featured content type for this post. Different content type will be displayed on single post page", 
 				"items" => array(
 					"Standard Image" => "Standard Image",
+					"Custom NEWS" => "Custom NEWS",				// Custom. ARG: 17/02/2015 custom post_ft_type 
 					"Fullwidth Image" => "Fullwidth Image",
 					"Standard Vimeo Video" => "Standard Vimeo Video",
 					"Fullwidth Vimeo Video" => "Fullwidth Vimeo Video",
