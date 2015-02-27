@@ -1,17 +1,144 @@
-.navmenuImportant{width: 100%;}
+
+/* Custom for Sports slidebar on Top of Article */
+#logomenu {background:url(../images/gradient03.jpg) repeat-x bottom #FFFFFF;padding:0;overflow:hidden;border-bottom:1px solid #ccc;border-radius:0% 0% 50% 50%;-webkit-border-radius:0% 0% 50% 50%;-moz-border-radius:0% 0% 50% 50%;-khtml-border-radius:0% 0% 50% 50%;margin:-10px 0 10px;box-shadow:0 -2px 2px #ddd;}
+#logolist {display:table;margin:0 auto;overflow:hidden;}
+#logolist li {float:left;border-right:1px solid #ccc;border-left:1px solid #fff;height:40px;}
+#logolist li.hit {background:url(../images/gradient06.jpg) repeat-x 0 0;}
+#logolist li:first-child {border-left:1px solid #ccc;}
+#logolist li a {display:block;padding:5px;}
+/* end: Custom for Sports slidebar on Top of Article */
+
+.navmenuImportant{max-width:960px; margin: 0 auto;}
 .navmenuImportant ul {margin: 0;padding: 0;list-style-type: none;list-style-image: none;}
 .navmenuImportant li {display: inline; }
-.navmenuImportant ul li a {text-decoration:none; margin: 4px;padding: 5px 20px 5px 20px;color: blue;background: red;}
-.navmenuImportant ul li a:hover {color: purple;background: yellow;}
-
-.slider_wrapper .main_post_full .read_full, .slider_wrapper .main_post .read_full,h5.header_line,.more_story_title,.post_previous_content h6, .post_next_content h6,h5.share_label,#page_caption h1{text-transform:none;}/*NO CAPITAL*/
+.navmenuImportant ul li a {text-decoration:none; margin: 4px;padding: 5px 20px 5px 20px;color: blue;}
+.navmenuImportant ul li a:hover {text-decoration:underline}
+.navmenuImportant span {float: left;color: white;font-weight: bold;font-size: 15px;}
+.navmenuImportantCont{background:#ed232a;height:26px;}
+.navmenuImportant ul li a{margin: 0 0;padding: 0 0 0 10px;color: #FFF;line-height: 27px;}
+.slider_wrapper .main_post_full .read_full, .slider_wrapper .main_post .read_full,h5.header_line,.more_story_title,.post_previous_content h6, .post_next_content h6,h5.share_label,#page_caption h1,.ppb_parallax_bg .post_title .read_full a, .ppb_video_bg .post_title .read_full a, .ppb_video_bg .post_title .read_full{text-transform:none;}/*NO CAPITAL*/
 
 .post_inner_wrapper p{font-size:1.3em}/*Article font size*/
 
-.navmenuImportant span {
-	float: left;
-	color: white;
-	font-weight: bold;
-	font-size: 15px;
-	background: red;
+
+#breaking_wrapper{position:relative}
+#dateToday{position: absolute;top:45px;z-index: 1;float: left;left: 0;}#dateToday p{padding:0;margin:0}
+
+/*Menu*/
+.second_nav > li > a{padding: 7px 7px 7px 7px;}
+.second_nav li.home{position:relative}
+.second_nav li.home a{text-indent: -9999px;width: 34px;height: 30px;background:#ed232a}
+.second_nav li.home a:after{content: "\f015";position: absolute;width: 37px;height: 44px;display: block;color: #FFF;font-family: 'FontAwesome';top:7px;right: 5px;font-size: 25px;text-indent: 0;}
+/*.second_nav li.home a:hover:after,.second_nav li.home.current-menu-item a:after{color:#FFF}*/
+
+/*slider*/
+.slider_wrapper .main_post_full .post_title, .ppb_parallax_bg .post_title, .ppb_video_bg .post_title, .ppb_video_bg .post_title{
+	background: url(data:image/svg+xml;	base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-8 */
 }
+.slider_wrapper .main_post_full .post_title h3{text-shadow: -1px -1px 0 #333;padding: 0 .5em 0 0;}
+.post_title_full_wrapper .lead{color: #FFF;margin: 0 2em .5em;}
+.post_title_full_wrapper .ribon{color: #FFF;background: #ed232a;margin: 0 .5em .2em 1.5em;font-size: 1.2em;display: inline-block;padding: 0 .5em;}
+
+#page_slider .flex-direction-nav .flex-prev, #page_slider .flex-direction-nav .flex-next {right: auto;left: 0;top: 45% !important;font-size: 1.8em;width: 34px;height: 58px;text-shadow: -3px 0px 0 #333;opacity: .6;}
+#page_slider .flex-direction-nav .flex-next{right:0;left:auto;}
+#page_slider:hover .flex-direction-nav .flex-prev, #page_slider:hover .flex-direction-nav .flex-next{opacity:1}
+.post_title_full_wrapper .read_full{text-align:right;margin: 0 1em;}
+.slider_wrapper .main_post_full .slider_date{color:#CCC}
+
+.ppb_header.fullwidth{margin-bottom:0}
+
+
+/*Ubuntu FontFamily*/
+body.category-politikh,body.postid-204875{font-family: 'Ubuntu', sans-serif !important}
+body.category-politikh #page_caption h1,body.postid-204875 #page_caption h1,
+body.category-politikh .post_header.half h4,body.postid-204875 .post_header.half h4,
+body.category-politikh h5.ppb_classic_title,body.postid-204875 h5.ppb_classic_title,
+body.category-politikh h5.ppb_classic_title,body.postid-204875 h5.ppb_classic_title,
+body.category-politikh ul.posts li h3,body.postid-204875 ul.posts li h3,
+body.category-politikh .post_header h3,body.postid-204875 .post_header h3,
+body.category-politikh h3.title,body.postid-204875 h3.title,
+body.category-politikh h3.title a,body.postid-204875 h3.title a,
+body.category-politikh .post_header.half h4,body.postid-204875 .post_header.half h4,
+body.category-politikh h5.ppb_classic_title,body.postid-204875 h5.ppb_classic_title,
+body.category-politikh h5.ppb_classic_title,body.postid-204875 h5.ppb_classic_title,
+body.category-politikh ul.posts li h3,body.postid-204875 ul.posts li h3,
+body.category-politikh .post_header h3,body.postid-204875 .post_header h3,
+body.category-politikh h3.title, h3.title a,body.postid-204875 h3.title, h3.title a,
+body.category-politikh .woocommerce ul.products li.product h3,body.postid-204875 .woocommerce ul.products li.product h3,
+body.category-politikh .woocommerce-page ul.products li.product h3,body.postid-204875 .woocommerce-page ul.products li.product h3,
+body.category-politikh .ppb_transparent_video_bg .post_title h3,body.postid-204875 .ppb_transparent_video_bg .post_title h3,
+body.category-politikh strong.title, a.post_title,body.postid-204875 strong.title, a.post_title,
+body.category-politikh h1.post_title,body.postid-204875 h1.post_title,
+body.category-politikh #post_more_wrapper h4,body.postid-204875 #post_more_wrapper h4,
+body.category-politikh .review-item .review-point-number,body.postid-204875 .review-item .review-point-number,
+body.category-politikh .edit_review_wrapper .visual_value,body.postid-204875 .edit_review_wrapper .visual_value,
+body.category-politikh #review-box.review-percentage .review-item h5,body.postid-204875 #review-box.review-percentage .review-item h5,
+body.category-politikh #review-box.review-percentage .review-item h5,body.postid-204875 #review-box.review-percentage .review-item h5,
+body.category-politikh #review-box .review-item h5,body.postid-204875 #review-box .review-item h5
+{font-family: 'Ubuntu Condensed', sans-serif !important;}
+
+/*Fira FontFamily*/
+body.category-oikonomia,body.postid-204917{font-family: 'Fira Sans', sans-serif !important}
+body.category-oikonomia #page_caption h1,body.postid-204917 #page_caption h1,
+body.category-oikonomia .post_header.half h4,body.postid-204917 .post_header.half h4,
+body.category-oikonomia h5.ppb_classic_title,body.postid-204917 h5.ppb_classic_title,
+body.category-oikonomia h5.ppb_classic_title,body.postid-204917 h5.ppb_classic_title,
+body.category-oikonomia ul.posts li h3,body.postid-204917 ul.posts li h3,
+body.category-oikonomia .post_header h3,body.postid-204917 .post_header h3,
+body.category-oikonomia h3.title,body.postid-204917 h3.title,
+body.category-oikonomia h3.title a,body.postid-204917 h3.title a,
+body.category-oikonomia .post_header.half h4,body.postid-204917 .post_header.half h4,
+body.category-oikonomia h5.ppb_classic_title,body.postid-204917 h5.ppb_classic_title,
+body.category-oikonomia h5.ppb_classic_title,body.postid-204917 h5.ppb_classic_title,
+body.category-oikonomia ul.posts li h3,body.postid-204917 ul.posts li h3,
+body.category-oikonomia .post_header h3,body.postid-204917 .post_header h3,
+body.category-oikonomia h3.title, h3.title a,body.postid-204917 h3.title, h3.title a,
+body.category-oikonomia .woocommerce ul.products li.product h3,body.postid-204917 .woocommerce ul.products li.product h3,
+body.category-oikonomia .woocommerce-page ul.products li.product h3,body.postid-204917 .woocommerce-page ul.products li.product h3,
+body.category-oikonomia .ppb_transparent_video_bg .post_title h3,body.postid-204917 .ppb_transparent_video_bg .post_title h3,
+body.category-oikonomia strong.title, a.post_title,body.postid-204917 strong.title, a.post_title,
+body.category-oikonomia h1.post_title,body.postid-204917 h1.post_title,
+body.category-oikonomia #post_more_wrapper h4,body.postid-204917 #post_more_wrapper h4,
+body.category-oikonomia .review-item .review-point-number,body.postid-204917 .review-item .review-point-number,
+body.category-oikonomia .edit_review_wrapper .visual_value,body.postid-204917 .edit_review_wrapper .visual_value,
+body.category-oikonomia #review-box.review-percentage .review-item h5,body.postid-204917 #review-box.review-percentage .review-item h5,
+body.category-oikonomia #review-box.review-percentage .review-item h5,body.postid-204917 #review-box.review-percentage .review-item h5,
+body.category-oikonomia #review-box .review-item h5,body.postid-204917 #review-box .review-item h5
+{font-family: 'Fira Sans', sans-serif !important;}
+body.category-oikonomia .post_header h3,body.postid-204917 h1.post_title{font-size:2.8em !important;line-height: 1em!important;letter-spacing: -2px!important;}
+
+/*Open Sans*/
+body.category-kosmos,body.postid-204830{font-family: 'Open Sans', sans-serif;!important}
+body.category-kosmos #page_caption h1,body.postid-204830 #page_caption h1,
+body.category-kosmos .post_header.half h4,body.postid-204830 .post_header.half h4,
+body.category-kosmos h5.ppb_classic_title,body.postid-204830 h5.ppb_classic_title,
+body.category-kosmos h5.ppb_classic_title,body.postid-204830 h5.ppb_classic_title,
+body.category-kosmos ul.posts li h3,body.postid-204830 ul.posts li h3,
+body.category-kosmos .post_header h3,body.postid-204830 .post_header h3,
+body.category-kosmos h3.title,body.postid-204830 h3.title,
+body.category-kosmos h3.title a,body.postid-204830 h3.title a,
+body.category-kosmos .post_header.half h4,body.postid-204830 .post_header.half h4,
+body.category-kosmos h5.ppb_classic_title,body.postid-204830 h5.ppb_classic_title,
+body.category-kosmos h5.ppb_classic_title,body.postid-204830 h5.ppb_classic_title,
+body.category-kosmos ul.posts li h3,body.postid-204830 ul.posts li h3,
+body.category-kosmos .post_header h3,body.postid-204830 .post_header h3,
+body.category-kosmos h3.title, h3.title a,body.postid-204830 h3.title, h3.title a,
+body.category-kosmos .woocommerce ul.products li.product h3,body.postid-204830 .woocommerce ul.products li.product h3,
+body.category-kosmos .woocommerce-page ul.products li.product h3,body.postid-204830 .woocommerce-page ul.products li.product h3,
+body.category-kosmos .ppb_transparent_video_bg .post_title h3,body.postid-204830 .ppb_transparent_video_bg .post_title h3,
+body.category-kosmos strong.title, a.post_title,body.postid-204830 strong.title, a.post_title,
+body.category-kosmos h1.post_title,body.postid-204830 h1.post_title,
+body.category-kosmos #post_more_wrapper h4,body.postid-204830 #post_more_wrapper h4,
+body.category-kosmos .review-item .review-point-number,body.postid-204830 .review-item .review-point-number,
+body.category-kosmos .edit_review_wrapper .visual_value,body.postid-204830 .edit_review_wrapper .visual_value,
+body.category-kosmos #review-box.review-percentage .review-item h5,body.postid-204830 #review-box.review-percentage .review-item h5,
+body.category-kosmos #review-box.review-percentage .review-item h5,body.postid-204830 #review-box.review-percentage .review-item h5,
+body.category-kosmos #review-box .review-item h5,body.postid-204830 #review-box .review-item h5
+{font-family: 'Open Sans Condensed', sans-serif !important;}

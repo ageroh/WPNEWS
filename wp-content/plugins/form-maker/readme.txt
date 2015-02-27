@@ -4,7 +4,7 @@ Donate link: http://web-dorado.com/products/wordpress-form.html
 Tags:  form, forms, form builder, form maker, form manager, form plugin, form with recaptcha,  forms plugin, multiple forms, paypal form, survey form, feedback form, feedback forms, contact form,contact form plugin, contact form builder, form creator, email form, secure form, web form, form to email, contact forms, custom forms, form widget, captcha form, wordpress contact form ,recaptcha contact form, form creation, contact form with auto reply, widget contact form, builder, feedback, contacts form plugin , custom contact form, contact us form,  formular, formulario 
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.7.26
+Stable tag: 1.7.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -223,6 +223,9 @@ In case you are upgrading your Form Maker to paid version, but still want to pre
 
 == Changelog ==
 
+= 1.7.26 =
+bug fixed in email content
+
 = 1.7.25 =
 remove fancybox lightbox
 
@@ -328,7 +331,8 @@ New themes
 *  Entries of a form: The number of submitted forms in the form builder.  
 *  Views of a form: The number of times the form has been viewed.  
 *  Conversion Rate of a form: The percentage of submitted forms to the overall number of views.  
-
+= 1.0.0 =
+Initial version
 
 ==Wordpress Form Maker Step by step guide==    
 ### Step 1: Installing the [Wordpress Form](http://wordpress.org/plugins/form-maker/) Maker    

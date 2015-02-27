@@ -27,6 +27,7 @@ if(!empty($page_slider))
 ?>
 				<li>
 <?php
+				// Custom. ARG. 18/02/2015 Add Post Ribon and Lead if they exist.
 				if(has_post_thumbnail($slider_post->ID, 'blog_single_full'))
 				{
 				    $image_id = get_post_thumbnail_id($slider_post->ID);
@@ -34,12 +35,20 @@ if(!empty($page_slider))
 				}
 				
 				$post_link = get_permalink($slider_post->ID);
+
+				// find ribbon and lead for Article 
+				$ribbonSlider = get_post_meta( $slider_post->ID, '_ribon_Custom', true );
+				$leadSlider = get_post_meta( $slider_post->ID, '_lead_Custom', true );
+				
 ?>
 				<a href="<?php echo $post_link; ?>">
 					<div class="main_post_full" style="background-image:url('<?php echo $image_thumb[0]; ?>');background-position: center top;background-repeat: repeat;">
 						<div class="post_title">
 						    <div class="post_title_full_wrapper">
+								<?php /*if( ! empty( $ribbonSlider ) ) { echo "<span class='ribbon'>".$ribbonSlider."</span>"; } */?>
+								<span class="ribon">This is a testing ribbon...</span>
 						    	<h3><?php echo $slider_post->post_title; ?></h3>
+						    	<?php if( ! empty( $leadSlider ) ) { echo '<div class="lead">'.$leadSlider.'</div>'; } ?>
 						    	<div class="slider_date"><?php echo date(THEMEDATEFORMAT, strtotime($slider_post->post_date)); ?></div>
 						    	<div class="read_full"><?php _e( 'Read Full Story', THEMEDOMAIN ); ?></div>
 						    </div>

@@ -53,10 +53,11 @@ class GooglePublisherPluginUtils {
       return 'singlePost';
     }
     if (is_page()) {
-      if (self::getPageTemplate() == 'default') {
+      $pageTemplate = self::getPageTemplate();
+      if ($pageTemplate == 'default') {
         return 'page';
       } else {
-        return 'customPageTemplate';
+        return hash('sha256', $pageTemplate);
       }
     }
     if (is_category()) {
@@ -134,6 +135,11 @@ class GooglePublisherPluginUtils {
 
     if (!empty($customPageTemplates)) {
       $urls['customPageTemplateUrlMap'] = $customPageTemplates;
+    }
+
+    $customPageTemplateDisplayNames = wp_get_theme()->get_page_templates();
+    if (!empty($customPageTemplateDisplayNames)) {
+      $urls['customPageTemplateDisplayNames'] = $customPageTemplateDisplayNames;
     }
 
     $latestArchiveUrl = self::getLatestArchiveUrl();

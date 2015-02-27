@@ -376,6 +376,16 @@ function pp_ajax_filter_blog() {
 	    	$return_html.= ' " style="width:'.$image_thumb[1].'px;height:'.$image_thumb[2].'px">';
 	    	
 	    	$return_html.= '<a href="'.get_permalink($post->ID).'" title="'.$post->post_title.'">';
+	    	
+	    	// Custom. ARG. 18/02/2015: Bring Video icon over Image inside ROH of Category, if post has youtube/vimeo video.
+			$hasVimeo = get_post_meta($post->ID, 'post_ft_vimeo', true);
+			$hasYouTube = get_post_meta($post->ID, 'post_ft_youtube', true);
+			if( !empty($hasVimeo) || !empty($hasYouTube))
+			{
+				$return_html.= '<div class="videoIcon"><img src="wp-content/themes/rigel/images/videoIcon.png" alt="Video"></div>';
+			}
+
+
 	    	$return_html.= '<img src="'.$image_thumb[0].'" alt="" class="post_ft"/></a>';
 	    	
 	    	//Get post type
@@ -761,30 +771,37 @@ function wptuts_scripts_load_cdn()
 {
 
     // Register the library 
-    wp_register_script( 'custom_fonc_js_Alex', 'http://fast.fonts.net/jsapi/055aa3ff-1162-42a7-b6c4-6dc11489926a.js', array(), null, false );
+    // -> removed wp_register_script( 'custom_fonc_js_Alex', 'http://fast.fonts.net/jsapi/055aa3ff-1162-42a7-b6c4-6dc11489926a.js', array(), null, false );
      
     // Register the script like this for a plugin:
     //wp_register_script( 'custom-script', plugins_url( '/js/custom-script.js', __FILE__ ), array( 'jquery' ) );
     // or
     // Register the script like this for a theme:
     //wp_register_script( 'custom-script', get_template_directory_uri() . '/js/custom-script.js', array( 'jquery' ) );
- 
+ 	//wp_register_script( 'smoothState', get_stylesheet_directory_uri() . '/js/test.js', array('jquery'), '1.0.0', true );
  	wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/custom_script.css');
 
     // For either a plugin or a theme, you can then enqueue the script:
     wp_enqueue_script( 'custom-style' );						// custom STYLE SHEET !!
-    wp_enqueue_script( 'custom_fonc_js_Alex' );
+    // wp_enqueue_script( 'custom_fonc_js_Alex' );
 }
 add_action( 'wp_enqueue_scripts', 'wptuts_scripts_load_cdn' );
 
+// Add some JS to footer
+/*function wp_jsscripts_footer()
+{
+	
+}
+add_action( 'wp_enqueue_scripts', 'wp_jsscripts_footer' );*/
 
 // Add custom MENU IMPORTANT TAGS TO HEADER OF EACH PAGE !
 add_action('wp_head', 'wpse_Importantheader_wp_head');
 function wpse_Importantheader_wp_head(){
 
 	?> 
+    <div class="navmenuImportantCont">
 	<div class="navmenuImportant">
-		<span>ΣΗΜΑΝΤΙΚΑ</span>
+		<span>ΣΗΜΑΝΤΙΚΑ:</span>
 		<?php
 		wp_nav_menu(
 		    array(
@@ -797,7 +814,8 @@ function wpse_Importantheader_wp_head(){
 		  )
 		);
 		?>
-	</div>	
+	</div>
+    </div>
 	<?php
 	
 }
@@ -868,6 +886,76 @@ add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
 
+/**
+		Try get Parent category of post ELSE get Current.
+*/
+
+function get_parent_or_child_category($post_id = null)
+{
+	$category = get_the_category($post_id);
+	$parent = get_cat_name($category[0]->category_parent);
+	$parent_ID = get_cat_ID($parent);
+	$parent_link = get_category_link($parent_ID);
+	if ($parent_link) {
+		return	$parent_ID;
+	} else {
+		return  $category[0]->term_id;
+	}
+}
+
+
+function show_parent_or_child_category($post_id = null)
+{
+	$cat_id = get_parent_or_child_category($post_id);
+	$real_cat_link = get_category_link($cat_id);
+	$real_cat_name = get_cat_name($cat_id);
+	return '<a href="'. $real_cat_link .'">'. $real_cat_name .'</a>';
+}
+
+
+/**
+	Create magic over post_link, in order to create Main Categories based to the selection of Admin
+*/
+
+function append_query_string( $url, $post, $leavename ) {
+	if ( $post->post_type == 'post' ) {
+		$url = add_query_arg( 'foo', 'bar', $url );
+	}
+	return $url;
+}
+// not used..
+//add_filter( 'post_link', 'append_query_string', 10, 3 );
+
+
+
+/**
+	GET Eortologio.gr RSS FEEDS !
+*/
+
+function get_Eortologio_Today()
+{
+
+	$xml=("http://www.eortologio.gr/rss/si_el.xml");
+
+	try {
+
+		$xmlDoc = new DOMDocument();
+		$xmlDoc->load($xml);
+
+		$channel=$xmlDoc->getElementsByTagName('channel')->item(0);
+		$channel_title = $channel->getElementsByTagName('item')->item(0)->childNodes->item(0)->nodeValue;
+		$channel_desc = $channel->getElementsByTagName('description')->item(0)->childNodes->item(0)->nodeValue;
+	} 
+	catch (Exception $e) 
+	{
+	    error_log('Caught exception while get_Eortologio_Today(): ',  $e->getMessage(), "\n");
+	}
+
+	if( strpos( $channel_title, "δεν υπάρχει μια γιορτή") !== false ) 	
+		return "Δεν υπάρχει γνώστή εορτή σήμερα.";
+	else
+		return $channel_title;
+}
 
 
 

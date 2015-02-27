@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The main template file for display single post page with sidebar.
@@ -29,6 +30,23 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 <!-- Begin content -->
 <div id="content_wrapper">
     <div class="inner">
+    	<?php 
+			$getCatID = get_parent_or_child_category( get_the_ID() );
+			switch ($getCatID) {
+				case '11':
+					get_template_part( 'single' , 'sports' );
+					break;
+
+				case '5':
+					get_template_part( 'single' , 'politikh' );
+					break;
+				
+				default:
+					# code...
+					break;
+			}
+
+		?>
     	<!-- Begin main content -->
     	<div class="inner_wrapper">
     		<?php
@@ -227,10 +245,7 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 			    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp; 
 					<?php 
 						/* Custom: ARG. 17/02/2015 : show category link */
-						$category = get_the_category(); 
-						if($category[0]){
-						echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
-						}
+						show_parent_or_child_category();
 					?>
 
 			    	<?php /* Remove Editor Name from Articles 
@@ -546,10 +561,7 @@ $pp_blog_single_ft_image = get_option('pp_blog_single_ft_image');
 											    	<?php echo get_the_time(THEMEDATEFORMAT); ?>&nbsp;
 													<?php 
 														/* Custom: ARG. 17/02/2015 : show category link */
-														$category = get_the_category(); 
-														if($category[0]){
-														echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
-														}
+														echo show_parent_or_child_category(get_the_ID());
 													?>
 
 											    	<?php /* Remove Editor Name from Articles 

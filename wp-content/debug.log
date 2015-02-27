@@ -1,0 +1,23 @@
+[20-Feb-2015 17:57:52 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 17:59:25 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 17:59:41 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 17:59:46 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 18:00:31 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 18:02:23 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[20-Feb-2015 18:02:33 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 09:25:29 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 10:39:47 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 10:40:20 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 10:46:49 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 11:31:40 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 12:38:15 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 12:38:42 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 13:06:45 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[24-Feb-2015 15:27:46 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[24-Feb-2015 15:28:12 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[24-Feb-2015 15:28:47 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[24-Feb-2015 15:29:11 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[24-Feb-2015 15:29:20 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[24-Feb-2015 15:30:13 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
+[26-Feb-2015 10:33:51 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[26-Feb-2015 10:54:22 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59

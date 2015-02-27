@@ -405,7 +405,7 @@ h2.breaking { color:<?php echo $pp_top_bar_breaking_header_font_color; ?>; }
 	$pp_menu_active_bg_color = $import_options_arr['pp_menu_active_bg_color'];
 	$pp_menu_active_font_color = $import_options_arr['pp_menu_active_font_color'];
 	
-	switch($pp_menu_active_style)
+	switch($pp_menu_active_style) 
 	{
 		case 'background':
 		default:

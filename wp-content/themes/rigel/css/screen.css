@@ -6308,3 +6308,19 @@ a.skin_box
 	margin: 0 0 5px 0;
 }
 
+
+/* Custom:ARG. 18/02/2015 Ribon over Image for Category classic Page, copied from NEWS.GR 
+	!!! MAKE IT RESPONSIVE !!!
+*/
+.post_inner_wrapper .ribbon {left: 5px;top: 317px;position:absolute;width:100%;}
+.post_inner_wrapper .tagline {background:url(../images/ribbonBg.png) repeat-x left top;height:14px;padding:4px 5px 2px;position:absolute;}
+.post_inner_wrapper .tagline a {color:#fff;font-size:13px;line-height:13px;}
+.post_inner_wrapper .tagline a:hover {color:#E8E8E8;text-decoration:none;}
+.post_inner_wrapper .triangle {background:url(../images/ribbonArrow.png) no-repeat 0 0;width:12px;height:6px;position:absolute;top:20px;left:10px;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.post_inner_wrapper .tagline {padding:5px 5px 2px;}
+}
+
+/* Custom:ARG. 18/02/2015: Camera Icon over Image inside HomePage , */
+.post_wrapper .videoIcon{position: absolute;z-index: 1;}
+

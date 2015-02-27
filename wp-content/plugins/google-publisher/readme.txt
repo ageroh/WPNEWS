@@ -92,6 +92,9 @@ All plugins and placements must still adhere to the [AdSense Terms and Condition
 
 == Changelog ==
 
+= 20 Feb 2015, Plugin version 1.1.0 =
+* Ads can now be placed on custom page templates.
+
 = 13 Jan 2015, Plugin version 1.0.2 =
 * Fixed a bug that caused newly created pages on some themes to be incorrectly recognized as using custom page templates.
 

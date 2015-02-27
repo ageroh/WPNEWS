@@ -40,8 +40,24 @@ if (have_posts()) : while (have_posts()) : the_post();
     	<?php
 	        if(!empty($image_thumb))
 	        {
+
+	        // Custom. ARG. 18/02/2015: insert ribbon over photo
+	        $ribbonCustom = get_post_meta(get_the_ID(), '_ribon_Custom', true);
+
+
 	    ?>
+
 		    <div class="post_img classic" style="width:<?php echo $image_thumb[1]; ?>px;height:<?php echo $image_thumb[2]; ?>px">
+			<?php
+		    	// Custom. ARG. 18/02/2015: Bring Video icon over Image inside ROH of Category, if post has youtube/vimeo video.
+				$hasVimeo = get_post_meta($post->ID, 'post_ft_vimeo', true);
+				$hasYouTube = get_post_meta($post->ID, 'post_ft_youtube', true);
+				if( !empty($hasVimeo) || !empty($hasYouTube))
+				{
+					echo '<div class="videoIcon"><img src="wp-content/themes/rigel/images/videoIcon.png" alt="Video"></div>';
+				}
+			?>
+
 		        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 		        	<img src="<?php echo $image_thumb[0]; ?>" alt="" class="post_ft entry_post"/>
 		        </a>
@@ -60,6 +76,20 @@ if (have_posts()) : while (have_posts()) : the_post();
 						<div class="review_score_bg"><i class="fa fa-star"></i><?php echo $post_review_score;?></div>
 				<?php
 					}
+				// Custom. ARG. 18/02/2015: insert ribbon over photo if exists					
+				if(!empty($ribbonCustom))
+				{
+				?>
+					<div class="ribbon">
+						<span class="tagline">
+							 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+							 	<?php echo $ribbonCustom;?> 
+							 </a>
+						</span>
+						<span class="triangle"></span>
+					</div>
+				<?php 
+				}
 				?>
 		        
 		    </div>

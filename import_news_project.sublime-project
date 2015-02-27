@@ -4,6 +4,10 @@
 		{
 			"follow_symlinks": true,
 			"path": "wp-content\\themes\\rigel"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "wp-content\\themes\\rigel-child"
 		}
 	],
 	"settings":

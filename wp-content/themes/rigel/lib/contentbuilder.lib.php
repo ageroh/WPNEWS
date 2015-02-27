@@ -364,10 +364,11 @@ function ppb_category_carousel_func($atts, $content) {
 	    	$return_html.= '<span class="post_attribute full">'.date(THEMEDATEFORMAT, strtotime($post->post_date));
 
 	    	// Custom. ARG. : 17/02/2015 Remove Author, add category name.
-			$categoryCustom = get_the_category($post->ID); 
-			if($categoryCustom[0]){
-				$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
-			}
+			//$categoryCustom = get_the_category($post->ID); 
+			//if($categoryCustom[0]){
+			//	$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+			//}
+			$return_html .=  " | " . show_parent_or_child_category($post->ID);
 
 			/*
 	    	$author_firstname = get_the_author_meta('first_name', $post->post_author);
@@ -1148,7 +1149,7 @@ function ppb_parallax_bg_func($atts, $content) {
 	}
 	
 	$return_html = '';
-	$return_html.= 'TEST <div class="'.$size.' ppb_parallax_bg" ';
+	$return_html.= '<div class="'.$size.' ppb_parallax_bg" ';
 	
 	if(!empty($background))
 	{
@@ -1620,7 +1621,17 @@ function ppb_categories_sidebar_func($atts, $content) {
 						$return_html.= '" ';
 						
 						$return_html.= '>';
+
 						$return_html.= '<a href="'.get_permalink($post->ID).'" title="'.$post->post_title.'">';
+						
+						// Custom. ARG. 18/02/2015: Bring Video image over Image of Article if article has vimeo-youtube post_meta included.
+						$hasVimeo = get_post_meta($post->ID, 'post_ft_vimeo', true);
+						$hasYouTube = get_post_meta($post->ID, 'post_ft_youtube', true);
+						if( !empty($hasVimeo) || !empty($hasYouTube))
+						{
+							$return_html.= '<div class="videoIcon"><img src="wp-content/themes/rigel/images/videoIcon.png" alt="Video"></div>';
+						}
+
 						$return_html.= '<img src="'.$image_thumb[0].'" alt="" class="post_ft entry_post" ';
 						$return_html.= 'style="width:'.$image_thumb[1].'px;height:'.$image_thumb[2].'px"';
 						$return_html.= '/></a>';
@@ -1653,10 +1664,13 @@ function ppb_categories_sidebar_func($atts, $content) {
 					$return_html.= date(THEMEDATEFORMAT, strtotime($post->post_date));
 
 					// Custom: ARG. 17/02/2015 Remove Author name, add first Category found instead.
-					$categoryCustom = get_the_category($post->ID); 
-					if($categoryCustom[0]){
-						$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
-					}
+					
+					//$categoryCustom = get_the_category($post->ID); 
+					//if($categoryCustom[0]){
+					//	$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
+					//}
+					$return_html .= " | " . show_parent_or_child_category($post->ID);
+
 
 					/*
 					$author_firstname = get_the_author_meta('first_name', $post->post_author);

@@ -157,7 +157,7 @@ function pp_tag_cloud_filter($args = array()) {
    $args['largest'] = 30;
    $args['unit'] = 'px';
    $args['number'] = 20;
-   $args['taxonomy'] = post_tag;
+   $args['taxonomy'] = 'post_tag';
 
    return $args;
 }

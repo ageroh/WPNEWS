@@ -265,6 +265,14 @@
 	.slider_wrapper .main_post_full .post_title, .ppb_parallax_bg .post_title, .ppb_video_bg .post_title { width: 100%; left: 0; padding: 0; }
 	.slider_wrapper .main_post .post_title h3 { width: 95%; margin-top: 0; font-size: 16px !important; line-height: 20px; margin: 0; margin: auto; }
 	.slider_wrapper .main_post_full .post_title h3 { width: 95%; font-size: 18px !important; line-height: 20px; margin: 0; margin: auto; margin-top: 15px; }
+	/*ARG. START: 18/02/2015 fix ribon and Lead...*/
+	.slider_wrapper .main_post_full .post_title .post_title_full_wrapper .lead { 
+		background: #fff;
+	}
+	.slider_wrapper .main_post_full .post_title .post_title_full_wrapper .ribbon { 
+		background: #fff;
+	}
+	/*ARG. END: 18/02/2015 fix ribon and Lead...*/
 	.slider_wrapper .main_post_full .post_title .post_title_full_wrapper { margin-left: 10px; margin-bottom: 10px; }
 	.slider_wrapper .main_post_full .read_full, .slider_wrapper .main_post .read_full, .slider_wrapper .main_post_full .slider_date, .slider_wrapper .main_post .slider_date { display: none; }
 	.slider_wrapper .sub_post .post_title h4 { width: 100%; font-size: 16px !important; }

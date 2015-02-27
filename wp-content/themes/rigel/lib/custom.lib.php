@@ -144,7 +144,8 @@ function dimox_breadcrumbs() {
  
     global $post;
     $homeLink = home_url();
-    echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
+    if(! is_tag())
+    	echo '<a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . ' ';
  
     if ( is_category() ) {
       global $wp_query;
@@ -153,7 +154,7 @@ function dimox_breadcrumbs() {
       $thisCat = get_category($thisCat);
       $parentCat = get_category($thisCat->parent);
       if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $delimiter . ' '));
-      echo $before . __( 'Archive by category ', THEMEDOMAIN ) . single_cat_title('', false) . '' . $after;
+      echo $before . /*__( 'Archive by category ', THEMEDOMAIN ) .*/  single_cat_title('', false) . '' . $after;
  
     } elseif ( is_day() ) {
       echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
@@ -209,7 +210,7 @@ function dimox_breadcrumbs() {
       echo $before . __( 'Search results for ', THEMEDOMAIN ) . get_search_query() . '"' . $after;
  
     } elseif ( is_tag() ) {
-      echo $before . __( 'Posts tagged ', THEMEDOMAIN ). '"' . single_tag_title('', false) . '"' . $after;
+      //echo $before . __( 'Posts tagged ', THEMEDOMAIN ). '"' . single_tag_title('', false) . '"' . $after;
  
     } elseif ( is_author() ) {
        global $author;
@@ -221,9 +222,9 @@ function dimox_breadcrumbs() {
     }
  
     if ( get_query_var('paged') ) {
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
+      if ( is_category() || is_day() || is_month() || is_year() || is_search() ||/* is_tag() ||*/ is_author() ) echo ' (';
       echo __('Page', THEMEDOMAIN) . ' ' . get_query_var('paged');
-      if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
+      if ( is_category() || is_day() || is_month() || is_year() || is_search() ||/* is_tag() ||*/ is_author() ) echo ')';
     }
  
     echo '</div>';
@@ -413,10 +414,7 @@ function pp_posts($sort = 'recent', $items = 3, $echo = TRUE, $show_thumb = TRUE
 		    	$return_html.= '">'.get_the_time(THEMEDATEFORMAT, $post->ID);
 
 				// Custom. ARG. Add category in sidebar		    	
-   				$categoryCustom = get_the_category($post->ID); 
-				if($categoryCustom[0]){
-					$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
-				}
+		    	$return_html .=  " | " . show_parent_or_child_category($post->ID);
 
 
 		    	if(comments_open($post->ID))
@@ -770,10 +768,8 @@ function pp_cat_posts($cat_id = '', $items = 5, $echo = TRUE, $show_thumb = TRUE
 		    	$return_html.= '">'.get_the_time(THEMEDATEFORMAT, $post->ID);
 
 		    	// Custom. ARG. Add category in sidebar		    	
-   				$categoryCustom = get_the_category($post->ID); 
-				if($categoryCustom[0]){
-					$return_html.= ' | <a href="'.get_category_link($categoryCustom[0]->term_id ).'">'.$categoryCustom[0]->cat_name.'</a>';
-				}
+				$return_html .=  " | " . show_parent_or_child_category($post->ID);
+				
 		    	
 		    	if(comments_open($post->ID))
 				{

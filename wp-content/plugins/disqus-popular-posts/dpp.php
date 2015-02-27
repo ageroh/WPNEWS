@@ -5,7 +5,7 @@
 	Plugin URI: http://creativetwilight.com/
 	Description: Shows the most popular posts by comments.
 	Author: Thor
-	Version: 1.2.3
+	Version: 1.2.4
 	Author URI: http://creativetwilight.com/
 */
 

@@ -2,8 +2,8 @@
 Contributors: godthor
 Tags: disqus, comments, widget, posts
 Requires at least: 3.0.1
-Tested up to: 4.1
-Stable tag: 1.2.3
+Tested up to: 4.1.1
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ It's free and simple to setup, just follow that link.
 2. A screenshot of the options screen.
 
 == Changelog ==
+
+= 1.2.4 =
+* Verified compatability with WordPress 4.1.1
 
 = 1.2.3 =
 * Added PHP documentation.

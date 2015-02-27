@@ -192,6 +192,7 @@ if(is_single())
 					if(!empty($pp_top_bar_search_display))
 					{
 				?>
+
 				<form role="search" method="get" name="searchform" id="searchform" action="<?php echo site_url(); ?>/">
 				    <div>
 				    	<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" autocomplete="off" title="<?php _e( 'Search...', THEMEDOMAIN ); ?>"/>
@@ -205,6 +206,25 @@ if(is_single())
 					}
 				?>
 				
+				<!-- Custom. ARG. 20/02/2015: should be moved inside Functions.php. -->
+				<div id="dateToday" class="left">
+                    <p>
+                    	<span id="headertime">
+                    		<?php echo DATE( "H:i" ); ?>
+                    	</span> | 
+                    	<span id="headerdate">
+                    		<?php 
+                    			//setlocale(LC_CTYPE, 'el_GR.UTF-8');	// should work on Linux..
+								//echo strftime(" %B.\n");
+                    			echo date("j F Y");
+                    		?>
+                    	</span>
+                    </p>
+                    <span class="left"><?php echo get_Eortologio_Today(); ?></span>
+                </div>
+                
+                <!-- Custom. ARG. 20/02/2015: should be moved inside Functions.php. -->
+
 				<?php
 					//if display social icons
 					$pp_top_bar_social_display = get_option('pp_top_bar_social_display');
