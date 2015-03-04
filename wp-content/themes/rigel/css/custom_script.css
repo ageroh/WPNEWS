@@ -1,4 +1,6 @@
-
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700&subset=latin,greek);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,greek);
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:400,700&subset=latin,greek);
 /* Custom for Sports slidebar on Top of Article */
 #logomenu {background:url(../images/gradient03.jpg) repeat-x bottom #FFFFFF;padding:0;overflow:hidden;border-bottom:1px solid #ccc;border-radius:0% 0% 50% 50%;-webkit-border-radius:0% 0% 50% 50%;-moz-border-radius:0% 0% 50% 50%;-khtml-border-radius:0% 0% 50% 50%;margin:-10px 0 10px;box-shadow:0 -2px 2px #ddd;}
 #logolist {display:table;margin:0 auto;overflow:hidden;}
@@ -112,7 +114,7 @@ body.category-oikonomia #review-box.review-percentage .review-item h5,body.posti
 body.category-oikonomia #review-box.review-percentage .review-item h5,body.postid-204917 #review-box.review-percentage .review-item h5,
 body.category-oikonomia #review-box .review-item h5,body.postid-204917 #review-box .review-item h5
 {font-family: 'Fira Sans', sans-serif !important;}
-body.category-oikonomia .post_header h3,body.postid-204917 h1.post_title{font-size:2.8em !important;line-height: 1em!important;letter-spacing: -2px!important;}
+body.category-oikonomia .post_header h3,body.postid-204917 h1.post_title{font-size:2.2em !important;line-height: 1.2em!important;}
 
 /*Open Sans*/
 body.category-kosmos,body.postid-204830{font-family: 'Open Sans', sans-serif;!important}
@@ -142,3 +144,62 @@ body.category-kosmos #review-box.review-percentage .review-item h5,body.postid-2
 body.category-kosmos #review-box.review-percentage .review-item h5,body.postid-204830 #review-box.review-percentage .review-item h5,
 body.category-kosmos #review-box .review-item h5,body.postid-204830 #review-box .review-item h5
 {font-family: 'Open Sans Condensed', sans-serif !important;}
+
+/*Comfortaa*/
+
+body.category-tech,body.postid-205030{font-family: 'Comfortaa', sans-serif;!important}
+body.category-tech #page_caption h1,body.postid-205030 #page_caption h1,
+body.category-tech .post_header.half h4,body.postid-205030 .post_header.half h4,
+body.category-tech h5.ppb_classic_title,body.postid-205030 h5.ppb_classic_title,
+body.category-tech h5.ppb_classic_title,body.postid-205030 h5.ppb_classic_title,
+body.category-tech ul.posts li h3,body.postid-205030 ul.posts li h3,
+body.category-tech .post_header h3,body.postid-205030 .post_header h3,
+body.category-tech h3.title,body.postid-205030 h3.title,
+body.category-tech h3.title a,body.postid-205030 h3.title a,
+body.category-tech .post_header.half h4,body.postid-205030 .post_header.half h4,
+body.category-tech h5.ppb_classic_title,body.postid-205030 h5.ppb_classic_title,
+body.category-tech h5.ppb_classic_title,body.postid-205030 h5.ppb_classic_title,
+body.category-tech ul.posts li h3,body.postid-205030 ul.posts li h3,
+body.category-tech .post_header h3,body.postid-205030 .post_header h3,
+body.category-tech h3.title, h3.title a,body.postid-205030 h3.title, h3.title a,
+body.category-tech .woocommerce ul.products li.product h3,body.postid-205030 .woocommerce ul.products li.product h3,
+body.category-tech .woocommerce-page ul.products li.product h3,body.postid-205030 .woocommerce-page ul.products li.product h3,
+body.category-tech .ppb_transparent_video_bg .post_title h3,body.postid-205030 .ppb_transparent_video_bg .post_title h3,
+body.category-tech strong.title, a.post_title,body.postid-205030 strong.title, a.post_title,
+body.category-tech h1.post_title,body.postid-205030 h1.post_title,
+body.category-tech #post_more_wrapper h4,body.postid-205030 #post_more_wrapper h4,
+body.category-tech .review-item .review-point-number,body.postid-205030 .review-item .review-point-number,
+body.category-tech .edit_review_wrapper .visual_value,body.postid-205030 .edit_review_wrapper .visual_value,
+body.category-tech #review-box.review-percentage .review-item h5,body.postid-205030 #review-box.review-percentage .review-item h5,
+body.category-tech #review-box.review-percentage .review-item h5,body.postid-205030 #review-box.review-percentage .review-item h5,
+body.category-tech #review-box .review-item h5,body.postid-205030 #review-box .review-item h5
+{font-family: 'Comfortaa', sans-serif !important;}
+
+/*Noto*/
+body.category-travel,body.postid-205036{font-family: 'Noto Sans', sans-serif !important}
+body.category-travel #page_caption h1,body.postid-205036 #page_caption h1,
+body.category-travel .post_header.half h4,body.postid-205036 .post_header.half h4,
+body.category-travel h5.ppb_classic_title,body.postid-205036 h5.ppb_classic_title,
+body.category-travel h5.ppb_classic_title,body.postid-205036 h5.ppb_classic_title,
+body.category-travel ul.posts li h3,body.postid-205036 ul.posts li h3,
+body.category-travel .post_header h3,body.postid-205036 .post_header h3,
+body.category-travel h3.title,body.postid-205036 h3.title,
+body.category-travel h3.title a,body.postid-205036 h3.title a,
+body.category-travel .post_header.half h4,body.postid-205036 .post_header.half h4,
+body.category-travel h5.ppb_classic_title,body.postid-205036 h5.ppb_classic_title,
+body.category-travel h5.ppb_classic_title,body.postid-205036 h5.ppb_classic_title,
+body.category-travel ul.posts li h3,body.postid-205036 ul.posts li h3,
+body.category-travel .post_header h3,body.postid-205036 .post_header h3,
+body.category-travel h3.title, h3.title a,body.postid-205036 h3.title, h3.title a,
+body.category-travel .woocommerce ul.products li.product h3,body.postid-205036 .woocommerce ul.products li.product h3,
+body.category-travel .woocommerce-page ul.products li.product h3,body.postid-205036 .woocommerce-page ul.products li.product h3,
+body.category-travel .ppb_transparent_video_bg .post_title h3,body.postid-205036 .ppb_transparent_video_bg .post_title h3,
+body.category-travel strong.title, a.post_title,body.postid-205036 strong.title, a.post_title,
+body.category-travel h1.post_title,body.postid-205036 h1.post_title,
+body.category-travel #post_more_wrapper h4,body.postid-205036 #post_more_wrapper h4,
+body.category-travel .review-item .review-point-number,body.postid-205036 .review-item .review-point-number,
+body.category-travel .edit_review_wrapper .visual_value,body.postid-205036 .edit_review_wrapper .visual_value,
+body.category-travel #review-box.review-percentage .review-item h5,body.postid-205036 #review-box.review-percentage .review-item h5,
+body.category-travel #review-box.review-percentage .review-item h5,body.postid-205036 #review-box.review-percentage .review-item h5,
+body.category-travel #review-box .review-item h5,body.postid-205036 #review-box .review-item h5
+{font-family: 'Noto Sans', sans-serif !important}

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-11-25 18:04:41+0000\n"
+"PO-Revision-Date: 2015-02-26 19:02:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -377,6 +377,10 @@ msgstr "Δεν έχετε επαρκή δικαιώματα για να διαχ
 msgid "Clicking on bold headings can re-sort this table."
 msgstr "Κλικάρωντας στις έντονες επικεφαλίδες επανα-ταξινομείτε τον πίνακα."
 
+#: wp-admin/network/site-new.php:107
+msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
+msgstr "Ο ιστότοπος προστέθηκε. <a href=\"%1$s\">Επισκεφτείτε τον Πίνακα Ελέγχου</a> η <a href=\"%2$s\">Επεξεργασία ιστότοπου</a>"
+
 #: wp-admin/network/site-themes.php:168
 msgid "Network enabled themes are not shown on this screen."
 msgstr "Τα ενεργοποιημένα θέματα του δικτύου εμφανίζονται στην οθόνη."
@@ -396,10 +400,6 @@ msgstr "Ο πίνακας ελέγχου οδηγεί στον πίνακα ελ
 #: wp-admin/network/settings.php:180
 msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page."
 msgstr "Επιτρέπεται στους διαχειριστές ιστότοπων να προσθέτουν νέους χρήστες στους ιστότοπους τους μέσω της σελίδας \"Χρήστες &rarr; Προσθήκη Νέου\"."
-
-#: wp-admin/network/site-new.php:107
-msgid "Site added. <a href=\"%1$s\">Visit Dashboard</a> or <a href=\"%2$s\">Edit Site</a>"
-msgstr "Ο ιστότοπος προστέθηκε. <a href=\"%1$s\">Επισκευθείτε τον πίνακα ελέγχου</a> η <a href=\"%2$s\">Αλλαγή ιστότοπου</a>"
 
 #: wp-admin/network/sites.php:34
 msgid "An Edit link to a separate Edit Site screen."

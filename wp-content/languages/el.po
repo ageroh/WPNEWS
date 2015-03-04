@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-01-08 21:47:46+0000\n"
+"PO-Revision-Date: 2015-02-19 14:41:43+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,7 +73,7 @@ msgid "Focus shortcuts:"
 msgstr "Εστιασμένες συντομέυσεις:"
 
 #. translators: 1: month, 2: day of month
-#: wp-includes/date.php:437
+#: wp-includes/date.php:449
 msgid "The following values do not describe a valid date: month %1$s, day %2$s."
 msgstr "Οι παρακάτω τιμές δεν περιγράφουν μια έγκυρη ημερομηνία: μήνας %1$s, ημέρα %2$s."
 
@@ -284,13 +284,13 @@ msgid "Quotes"
 msgstr "Ρήσεις"
 
 #. translators: 1: year, 2: month, 3: day of month
-#: wp-includes/date.php:420
+#: wp-includes/date.php:432
 msgid "The following values do not describe a valid date: year %1$s, month %2$s, day %3$s."
 msgstr "Οι ακόλουθες τιμές δεν περιγράφουν σωστά την ημερομηνία: έτος %1$s μήνας %2$s, ημέρα %3$s. "
 
 #. translators: Date query invalid date message: 1: invalid value, 2: type of
 #. value, 3: minimum valid value, 4: maximum valid value
-#: wp-includes/date.php:391
+#: wp-includes/date.php:402
 msgid "Invalid value %1$s for %2$s. Expected value should be between %3$s and %4$s."
 msgstr "Λάθος τιμή %1$s για το %2$s. Η αναμενόμενη τιμή πρέπει να είναι μεταξύ %3$s και %4$s."
 
@@ -355,6 +355,16 @@ msgstr "Προσαρμογή..."
 msgid "No image selected"
 msgstr "Δεν επιλέχθηκε εικόνα"
 
+#: wp-includes/post.php:38
+msgctxt "add new on admin bar"
+msgid "Page"
+msgstr "Σελίδας"
+
+#: wp-includes/post.php:22
+msgctxt "add new on admin bar"
+msgid "Post"
+msgstr "Άρθρου"
+
 #: wp-includes/post.php:57
 msgctxt "add new media"
 msgid "Add New"
@@ -370,11 +380,6 @@ msgctxt "TinyMCE menu"
 msgid "Format"
 msgstr "Μορφή"
 
-#: wp-includes/post.php:38
-msgctxt "add new on admin bar"
-msgid "Page"
-msgstr "Σελίδα"
-
 #: wp-includes/admin-bar.php:581
 msgctxt "add new from admin bar"
 msgid "Link"
@@ -384,11 +389,6 @@ msgstr "Σύνδεσμος"
 msgctxt "list style"
 msgid "Default"
 msgstr "Προεπιλογή"
-
-#: wp-includes/post.php:22
-msgctxt "add new on admin bar"
-msgid "Post"
-msgstr "Άρθρο"
 
 #: wp-login.php:850
 msgid "<strong>You have successfully updated WordPress!</strong> Please log back in to see what&#8217;s new."
@@ -1546,22 +1546,22 @@ msgstr "https://wordpress.org/"
 msgid "https://wordpress.org/support/"
 msgstr "https://wordpress.org/support/"
 
-#: wp-includes/general-template.php:2786
+#: wp-includes/general-template.php:2799
 msgctxt "admin color scheme"
 msgid "Ectoplasm"
 msgstr "Εκτόπλασμα"
 
-#: wp-includes/general-template.php:2792
+#: wp-includes/general-template.php:2805
 msgctxt "admin color scheme"
 msgid "Ocean"
 msgstr "Ωκεανός"
 
-#: wp-includes/general-template.php:2798
+#: wp-includes/general-template.php:2811
 msgctxt "admin color scheme"
 msgid "Coffee"
 msgstr "Καφές"
 
-#: wp-includes/general-template.php:2780
+#: wp-includes/general-template.php:2793
 msgctxt "admin color scheme"
 msgid "Sunrise"
 msgstr "Αυγή"
@@ -1619,19 +1619,19 @@ msgid "A list of your site&#8217;s Pages."
 msgstr "Μια λίστα των σελίδων του ιστότοπου σας."
 
 #. translators: If there are characters in your language that are not supported
-#. * by Open Sans, translate this to 'off'. Do not translate into your own
+#. by Open Sans, translate this to 'off'. Do not translate into your own
 #. language.
 #: wp-includes/script-loader.php:590
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr "ενεργό"
 
-#: wp-includes/general-template.php:2762
+#: wp-includes/general-template.php:2775
 msgctxt "admin color scheme"
 msgid "Light"
 msgstr "Ανοιχτό"
 
-#: wp-includes/general-template.php:2774
+#: wp-includes/general-template.php:2787
 msgctxt "admin color scheme"
 msgid "Midnight"
 msgstr "Μεσονύχτιο"
@@ -1641,15 +1641,14 @@ msgid "Use commas instead of %s to separate excluded terms."
 msgstr "Χρησιμοποιήστε κόμμα αντί των %s να διαχωρίσετε τους αποκλεισμένους όρους."
 
 #. translators: To add an additional Open Sans character subset specific to
-#. your language,
-#. * translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not translate
-#. into your own language.
+#. your language, translate this to 'greek', 'cyrillic' or 'vietnamese'. Do not
+#. translate into your own language.
 #: wp-includes/script-loader.php:596
 msgctxt "Open Sans font: add new subset (greek, cyrillic, vietnamese)"
 msgid "no-subset"
 msgstr "χωρίς-υποσύνολο"
 
-#: wp-includes/general-template.php:2752
+#: wp-includes/general-template.php:2765
 msgctxt "admin color scheme"
 msgid "Default"
 msgstr "Προεπιλεγμένο"
@@ -1658,7 +1657,7 @@ msgstr "Προεπιλεγμένο"
 msgid "Menu"
 msgstr "Μενού"
 
-#: wp-includes/update.php:555
+#: wp-includes/update.php:553
 msgid "Translation Updates"
 msgstr "Ενημερώσεις μετάφρασης"
 
@@ -1675,11 +1674,10 @@ msgid "This content is password protected. To view it please enter your password
 msgstr "Αυτό το περιεχόμενο είναι προστατευμένο με κωδικό. Για να το δείτε εισάγετε τον κωδικό σας παρακάτω:"
 
 #. translators: This is a comma-separated list of very common words that should
-#. be excluded from a search,
-#. * like a, an, and the. These are usually called "stopwords". You should
-#. not simply translate these individual
-#. * words into your language. Instead, look for and provide commonly
-#. accepted stopwords in your language.
+#. be excluded from a search, like a, an, and the. These are usually called
+#. "stopwords". You should not simply translate these individual words into
+#. your language. Instead, look for and provide commonly accepted stopwords in
+#. your language.
 #: wp-includes/query.php:2147
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
@@ -1944,10 +1942,9 @@ msgid "Insert from URL"
 msgstr "Εισαγωγή από URL"
 
 #. translators: This is a would-be plural string used in the media manager.
-#. If there is not a word you can use in your language to avoid issues
-#. with the
-#. lack of plural support here, turn it into "selected: %d" then translate
-#. it.
+#. If there is not a word you can use in your language to avoid issues with
+#. the 		   lack of plural support here, turn it into "selected: %d" then
+#. translate it.
 #: wp-includes/media.php:2920
 msgid "%d selected"
 msgstr "%d έχουν επιλεγεί"
@@ -2071,7 +2068,7 @@ msgstr "Όλα τα πολυμέσα"
 
 #: wp-includes/media.php:2940
 msgid "Uploaded to this post"
-msgstr "Μεταφορτώθηκε στην δημοσίευση"
+msgstr "Μεταφορτώθηκε στο άρθρο"
 
 #: wp-includes/media.php:2933
 msgid "&#8592; Return to library"
@@ -2423,11 +2420,11 @@ msgstr "Άνω γραμμή εργαλείων."
 msgid "Hex Value"
 msgstr "Δεκαεξαδική τιμή"
 
-#: wp-includes/class-wp-customize-manager.php:1033
+#: wp-includes/class-wp-customize-manager.php:1056
 msgid "Header Text Color"
 msgstr "Χρώμα κειμένου κεφαλίδας"
 
-#: wp-includes/class-wp-customize-manager.php:1011
+#: wp-includes/class-wp-customize-manager.php:1034
 msgid "Colors"
 msgstr "Χρώματα"
 
@@ -2460,12 +2457,12 @@ msgstr "Τα ορίσματα γι’ αυτή τη μέθοδο XML-RPC είν�
 msgid "Sorry, you cannot stick a private post."
 msgstr "Λυπούμαστε, δεν μπορείτε να μονιμοποιήσετε ιδιωτικό άρθρο"
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "You can edit your menu content on the Menus screen in the Appearance section."
 msgstr "Μπορείτε να επεξεργαστείτε το περιεχόμενο του μενού από την οθόνη Μενού της ενότητας Εμφάνιση."
 
 #: wp-includes/class-wp-customize-control.php:925
-#: wp-includes/class-wp-customize-manager.php:1056
+#: wp-includes/class-wp-customize-manager.php:1079
 msgid "Header Image"
 msgstr "Εικόνα κεφαλίδας"
 
@@ -2509,32 +2506,32 @@ msgstr "Το ψευδώνυμο αυτό δεν επιτρέπεται."
 msgid "Please enter a username."
 msgstr "Δώστε ένα ψευδώνυμο."
 
-#: wp-includes/class-wp-customize-manager.php:1207
+#: wp-includes/class-wp-customize-manager.php:1230
 msgid "A static page"
 msgstr "Στατική σελίδα"
 
 #: wp-includes/class-wp-customize-control.php:894
-#: wp-includes/class-wp-customize-manager.php:1076
+#: wp-includes/class-wp-customize-manager.php:1099
 msgid "Background Image"
 msgstr "Εικόνα φόντου"
 
-#: wp-includes/class-wp-customize-manager.php:1027
+#: wp-includes/class-wp-customize-manager.php:1050
 msgid "Display Header Text"
 msgstr "Προβολή κειμένου κεφαλίδας"
 
-#: wp-includes/class-wp-customize-manager.php:1048
+#: wp-includes/class-wp-customize-manager.php:1071
 msgid "Background Color"
 msgstr "Χρώμα φόντου"
 
-#: wp-includes/class-wp-customize-manager.php:1098
+#: wp-includes/class-wp-customize-manager.php:1121
 msgid "Background Repeat"
 msgstr "Επανάληψη φόντου"
 
-#: wp-includes/class-wp-customize-manager.php:1115
+#: wp-includes/class-wp-customize-manager.php:1138
 msgid "Background Position"
 msgstr "Θέση φόντου"
 
-#: wp-includes/class-wp-customize-manager.php:1131
+#: wp-includes/class-wp-customize-manager.php:1154
 msgid "Background Attachment"
 msgstr "Επισύναψη φόντου"
 
@@ -2546,35 +2543,35 @@ msgstr "Αλλαγή εικόνας"
 msgid "Sorry, you are not allowed to edit this post type."
 msgstr "Δεν επιτρέπεται να επεξεργάζεστε άρθρα αυτού του τύπου."
 
-#: wp-includes/class-wp-customize-manager.php:1136
+#: wp-includes/class-wp-customize-manager.php:1159
 msgid "Fixed"
 msgstr "Σταθερή"
 
-#: wp-includes/class-wp-customize-manager.php:1135
+#: wp-includes/class-wp-customize-manager.php:1158
 msgid "Scroll"
 msgstr "Κυλιόμενη"
 
-#: wp-includes/class-wp-customize-manager.php:1102
+#: wp-includes/class-wp-customize-manager.php:1125
 msgid "No Repeat"
 msgstr "Χωρίς επανάληψη"
 
-#: wp-includes/class-wp-customize-manager.php:1104
+#: wp-includes/class-wp-customize-manager.php:1127
 msgid "Tile Horizontally"
 msgstr "Οριζόντια παράθεση"
 
-#: wp-includes/class-wp-customize-manager.php:1105
+#: wp-includes/class-wp-customize-manager.php:1128
 msgid "Tile Vertically"
 msgstr "Κάθετη παράθεση"
 
-#: wp-includes/class-wp-customize-manager.php:1103
+#: wp-includes/class-wp-customize-manager.php:1126
 msgid "Tile"
 msgstr "Τίτλος"
 
-#: wp-includes/class-wp-customize-manager.php:1218
+#: wp-includes/class-wp-customize-manager.php:1241
 msgid "Front page"
 msgstr "Πρώτη σελίδα"
 
-#: wp-includes/class-wp-customize-manager.php:1230
+#: wp-includes/class-wp-customize-manager.php:1253
 msgid "Posts page"
 msgstr "Σελίδα άρθρων"
 
@@ -2682,39 +2679,39 @@ msgstr "Το θέμα %s δεν είναι έγκυρο γονικό θέμα."
 msgid "ERROR: The themes directory is either empty or doesn&#8217;t exist. Please check your installation."
 msgstr "Σφάλμα: Ο κατάλογος θεμάτων είναι κενός ή απουσιάζει. Ελέγξτε την εγκατάστασή σας!"
 
-#: wp-includes/class-wp-customize-manager.php:1155
+#: wp-includes/class-wp-customize-manager.php:1178
 msgid "Navigation"
 msgstr "Πλοήγηση"
 
 #: wp-includes/class-wp-customize-control.php:475
-#: wp-includes/class-wp-customize-manager.php:1162
+#: wp-includes/class-wp-customize-manager.php:1185
 #: wp-includes/default-widgets.php:1362
 msgid "&mdash; Select &mdash;"
 msgstr "– Επιλέξτε –"
 
-#: wp-includes/class-wp-customize-manager.php:1004
+#: wp-includes/class-wp-customize-manager.php:1027
 msgid "Tagline"
 msgstr "Υπότιτλος"
 
-#: wp-includes/class-wp-customize-manager.php:1158
+#: wp-includes/class-wp-customize-manager.php:1181
 msgid "Your theme supports %s menu. Select which menu you would like to use."
 msgid_plural "Your theme supports %s menus. Select which menu appears in each location."
 msgstr[0] "Επιλέξτε μενού για το θέμα σας"
 msgstr[1] "Επιλέξτε μενού για τις τοποθεσίες μενού (%s) του θέματός σας"
 
-#: wp-includes/class-wp-customize-manager.php:1188
+#: wp-includes/class-wp-customize-manager.php:1211
 msgid "Static Front Page"
 msgstr "Στατική αρχική σελίδα"
 
-#: wp-includes/class-wp-customize-manager.php:1191
+#: wp-includes/class-wp-customize-manager.php:1214
 msgid "Your theme supports a static front page."
 msgstr "To θέμα σας υποστηρίζει στατική αρχική σελίδα."
 
-#: wp-includes/class-wp-customize-manager.php:1202
+#: wp-includes/class-wp-customize-manager.php:1225
 msgid "Front page displays"
 msgstr "Η αρχική σελίδα δείχνει"
 
-#: wp-includes/class-wp-customize-manager.php:1206
+#: wp-includes/class-wp-customize-manager.php:1229
 msgid "Your latest posts"
 msgstr "Τελευταία άρθρα"
 
@@ -2722,18 +2719,16 @@ msgstr "Τελευταία άρθρα"
 msgid "Refresh"
 msgstr "Ανανέωση"
 
-#: wp-includes/class-wp-customize-manager.php:982
+#: wp-includes/class-wp-customize-manager.php:1005
 msgid "Site Title & Tagline"
 msgstr "Τίτλος & υπότιτλος ιστότοπου"
 
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into your
-#. own language.
+#. characters), 	   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #. translators: If your word count is based on single characters (East Asian
-#. characters),
-#. enter 'characters'. Otherwise, enter 'words'. Do not translate into
-#. your own language.
+#. characters), 		   enter 'characters'. Otherwise, enter 'words'. Do not
+#. translate into your own language.
 #: wp-includes/formatting.php:2603 wp-includes/script-loader.php:374
 msgctxt "word count: words or characters?"
 msgid "words"
@@ -3035,7 +3030,7 @@ msgstr "Τεκμηρίωση"
 msgid "Support Forums"
 msgstr "Φόρουμ υποστήριξης"
 
-#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2678
+#: wp-includes/formatting.php:2598 wp-includes/general-template.php:2691
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -3111,7 +3106,7 @@ msgstr "Το αρχείο δεν είναι εικόνα. Δοκιμάστε έ�
 msgid "This is larger than the maximum size. Please try another."
 msgstr "Το αρχείο υπερβαίνει το μέγιστο επιτρεπόμενο όριο. Δοκιμάστε άλλο αρχείο."
 
-#: wp-includes/general-template.php:2768
+#: wp-includes/general-template.php:2781
 msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Μπλε"
@@ -3976,7 +3971,7 @@ msgstr "Ο ιστότοπος που ζητήσατε δεν είναι εγκα
 
 #: wp-includes/ms-load.php:109
 msgid "This site has been archived or suspended."
-msgstr "Ο ιστοχώρος έχει αρχειοθετηθεί ή ανασταλθεί."
+msgstr "Ο ιστότοπος έχει αρχειοθετηθεί ή ανασταλεί."
 
 #: wp-includes/nav-menu.php:247 wp-includes/nav-menu.php:254
 msgid "The menu name <strong>%s</strong> conflicts with another menu name. Please try another."
@@ -4047,10 +4042,6 @@ msgstr "Αν βλέπετε αυτό το μήνυμα επανειλημμέν�
 msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
 msgstr "Τουλάχιστον 4 χαρακτήρες, μόνο λατινικά γράμματα και αριθμοί. Δεν γίνεται να αλλάξει, οπότε επιλέξτε με προσοχή!"
 
-#: wp-signup.php:262
-msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
-msgstr "Καλώς ήρθατε, %s. Αν θέλετε να προσθέσετε άλλον έναν ιστοχώρο στο λογαριασμό σας, συμπληρώστε την αίτηση από κάτω. Δεν υπάρχει όριο στον αριθμό ιστοτόπων που επιτρέπονται ανά μέλος, οπότε φτιάξτε όσους θέλετε! Και δημοσιεύετε υπεύθυνα!"
-
 #: wp-signup.php:633
 msgid "If you haven&#8217;t received your email yet, there are a number of things you can do:"
 msgstr "Αν δεν έχετε λάβει ακόμα το μήνυμά σας, δοκιμάστε τα παρακάτω:"
@@ -4062,6 +4053,10 @@ msgstr "Για να δημιουργήσετε έναν νέο ιστότοπο 
 #: wp-signup.php:708
 msgid "You are logged in already. No need to register again!"
 msgstr "Είστε ήδη συνδεδεμένοι. Δεν χρειάζεται να εγγραφείτε πάλι!"
+
+#: wp-signup.php:262
+msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
+msgstr "Καλώς ήρθατε, %s. Αν θέλετε να <strong>προσθέσετε άλλον έναν ιστότοπο στο λογαριασμό σας</strong>, συμπληρώστε την αίτηση από κάτω. Δεν υπάρχει όριο στον αριθμό ιστοτόπων που επιτρέπονται ανά μέλος, οπότε φτιάξτε όσους θέλετε! Και δημοσιεύετε υπεύθυνα!"
 
 #: wp-includes/script-loader.php:499
 msgid "Are you sure you want to install this plugin?"
@@ -4123,17 +4118,17 @@ msgstr ""
 msgid "This is the short link."
 msgstr "Αυτός ειναι ο μικροσύνδεσμος"
 
-#: wp-includes/update.php:549
+#: wp-includes/update.php:547
 msgid "%d WordPress Update"
 msgstr "%d ενημέρωση WordPress"
 
-#: wp-includes/update.php:553
+#: wp-includes/update.php:551
 msgid "%d Theme Update"
 msgid_plural "%d Theme Updates"
 msgstr[0] "%d Theme Update"
 msgstr[1] "%d ενημερώσεις θεμάτων"
 
-#: wp-includes/update.php:551
+#: wp-includes/update.php:549
 msgid "%d Plugin Update"
 msgid_plural "%d Plugin Updates"
 msgstr[0] "%d ενημέρωση πρόσθετων"
@@ -4146,10 +4141,6 @@ msgstr "Το αρχείο ακυρώθηκε."
 #: wp-includes/ms-load.php:102
 msgid "This site has not been activated yet. If you are having problems activating your site, please contact <a href=\"mailto:%1$s\">%1$s</a>."
 msgstr "Ο ιστότοπος αυτός δεν έχει ενεργοποιηθεί. Αν έχετε πρόβλημα με την ενεργοποίηση, στείλτε μήνυμα στο <a href=\"mailto:%1$s\">%1$s</a>."
-
-#: wp-signup.php:256
-msgid "Get <em>another</em> %s site in seconds"
-msgstr "Φτιάξτε <em>έναν άλλο</em> ιστοχώρο στο %s σε δευτερόλεπτα"
 
 #: wp-signup.php:268
 msgid "Sites you are already a member of:"
@@ -4182,6 +4173,10 @@ msgstr "Συγχαρητήρια! Ο νέος σας ιστότοπος, %s, ε�
 #: wp-signup.php:94
 msgid "Site Name:"
 msgstr "Όνομα Ιστοτόπου:"
+
+#: wp-signup.php:256
+msgid "Get <em>another</em> %s site in seconds"
+msgstr "Φτιάξτε <em>έναν άλλο</em> ιστότοπο στο %s σε δευτερόλεπτα"
 
 #: wp-signup.php:374
 msgid "The site %s is yours."
@@ -4357,13 +4352,6 @@ msgstr "Δεν επιτρέπεται να ενημερώνετε επιλογέ
 msgid "Sorry, you cannot edit this post."
 msgstr "Δεν επιτρέπεται να επεξεργαστείτε αυτό το άρθρο."
 
-#: wp-includes/class-wp-xmlrpc-server.php:4227
-#: wp-includes/class-wp-xmlrpc-server.php:4292
-#: wp-includes/class-wp-xmlrpc-server.php:5084
-#: wp-includes/class-wp-xmlrpc-server.php:5599
-msgid "Sorry, no such post."
-msgstr "Δεν υπάρχει τέτοια δημοσίευση!"
-
 #: wp-includes/class-wp-xmlrpc-server.php:4236
 #: wp-includes/class-wp-xmlrpc-server.php:4879
 msgid "Sorry, you do not have the right to publish this post."
@@ -4411,6 +4399,13 @@ msgstr "Η εγκατάσταση PHP φαίνεται ότι δεν έχει τ
 #: wp-includes/load.php:384
 msgid "<strong>ERROR</strong>: <code>$table_prefix</code> in <code>wp-config.php</code> can only contain numbers, letters, and underscores."
 msgstr "<strong>Σφάλμα</strong>: Το <code>$table_prefix</code> στο <code>wp-config.php</code> επιτρέπειται να περιέχει μόνο αριθμούς, γράμματα και κάτω παύλες."
+
+#: wp-includes/class-wp-xmlrpc-server.php:4227
+#: wp-includes/class-wp-xmlrpc-server.php:4292
+#: wp-includes/class-wp-xmlrpc-server.php:5084
+#: wp-includes/class-wp-xmlrpc-server.php:5599
+msgid "Sorry, no such post."
+msgstr "Συγνώμη, δεν υπάρχει τέτοιο άρθρο!"
 
 #: wp-includes/class-wp-xmlrpc-server.php:425
 msgid "Time Zone"
@@ -4757,11 +4752,11 @@ msgstr "Κανάλι ετικέτας %3$s %2$s %1$s"
 msgid "%1$s %2$s Posts by %3$s Feed"
 msgstr "%1$s %2$s Κανάλι άρθρων του/της %3$s"
 
-#: wp-includes/general-template.php:2614
+#: wp-includes/general-template.php:2612
 msgid "&laquo; Previous"
 msgstr "&laquo; Προηγούμενη"
 
-#: wp-includes/general-template.php:2615
+#: wp-includes/general-template.php:2613
 msgid "Next &raquo;"
 msgstr "Επόμενη &raquo;"
 
@@ -5377,10 +5372,6 @@ msgstr "Πρoστατευμένο: %s"
 msgid "Private: %s"
 msgstr "Απόρρητο: %s"
 
-#: wp-includes/post-template.php:759
-msgid "Next page"
-msgstr "Επόμενη Σελίδα"
-
 #: wp-includes/post-template.php:760
 msgid "Previous page"
 msgstr "Προηγούμενη σελίδα"
@@ -5924,6 +5915,10 @@ msgstr "Νέα Εγγραφή Χρήστη: %s"
 msgid "Still waiting for your email?"
 msgstr "Ακόμη περιμένετε για το email σας;"
 
+#: wp-includes/post-template.php:759
+msgid "Next page"
+msgstr "Επόμενη σελίδα"
+
 #: wp-includes/class-wp-theme.php:267
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "To γονικό θέμα απουσιάζει. Εγκαταστήστε το θέμα <i>%s</i>."
@@ -6434,71 +6429,6 @@ msgid_plural "%s topics"
 msgstr[0] "%s θέμα"
 msgstr[1] "%s θέματα"
 
-#: wp-includes/class-pop3.php:82
-msgid "No server specified"
-msgstr "Δεν ορίσατε διακομιστή"
-
-#: wp-includes/class-pop3.php:90 wp-includes/class-pop3.php:102
-#: wp-includes/class-pop3.php:123 wp-includes/class-pop3.php:246
-#: wp-includes/class-pop3.php:300 wp-includes/class-pop3.php:311
-#: wp-includes/class-pop3.php:359 wp-includes/class-pop3.php:393
-#: wp-includes/class-pop3.php:426 wp-includes/class-pop3.php:525
-#: wp-includes/class-pop3.php:548
-msgid "Error "
-msgstr "Σφάλμα "
-
-#: wp-includes/class-pop3.php:115
-msgid "no login ID submitted"
-msgstr "Δεν δηλώσατε ID σύνδεσης"
-
-#: wp-includes/class-pop3.php:118 wp-includes/class-pop3.php:138
-msgid "connection not established"
-msgstr "Η σύνδεση απέτυχε"
-
-#: wp-includes/class-pop3.php:135 wp-includes/class-pop3.php:171
-msgid "No password submitted"
-msgstr "Δεν δώσατε συνθηματικό"
-
-#: wp-includes/class-pop3.php:162 wp-includes/class-pop3.php:205
-#: wp-includes/class-pop3.php:230 wp-includes/class-pop3.php:272
-#: wp-includes/class-pop3.php:346 wp-includes/class-pop3.php:386
-#: wp-includes/class-pop3.php:416 wp-includes/class-pop3.php:450
-#: wp-includes/class-pop3.php:513 wp-includes/class-pop3.php:578
-msgid "No connection to server"
-msgstr "Όχι σύνδεση με διακομιστή"
-
-#: wp-includes/class-pop3.php:176
-msgid "No server banner"
-msgstr "Λείπει μήνυμα διακομιστή"
-
-#: wp-includes/class-pop3.php:176 wp-includes/class-pop3.php:186
-msgid "abort"
-msgstr "διακοπή"
-
-#: wp-includes/class-pop3.php:186
-msgid "apop authentication failed"
-msgstr "Η εξουσιοδότηση APOP απέτυχε"
-
-#: wp-includes/class-pop3.php:323
-msgid "Premature end of list"
-msgstr "Πρόωρο τέρμα καταλόγου"
-
-#: wp-includes/class-pop3.php:456
-msgid "Empty command string"
-msgstr "Κενή εντολή-συμβολοσειρά"
-
-#: wp-includes/class-pop3.php:476
-msgid "connection does not exist"
-msgstr "δεν υπάρχει σύνδεση"
-
-#: wp-includes/class-pop3.php:583
-msgid "No msg number submitted"
-msgstr "Δεν δηλώθηκε αρ. μηνύματος"
-
-#: wp-includes/class-pop3.php:589
-msgid "Command failed "
-msgstr "Η εντολή απέτυχε"
-
 #: wp-includes/category-template.php:998
 msgid "Feed for all posts filed under %s"
 msgstr "Κανάλι άρθρων της κατηγορίας %s"
@@ -6594,10 +6524,6 @@ msgstr "Επιτρέπονται σχόλια σε άρθρα"
 msgid "<strong>ERROR</strong>: This email is already registered, please choose another one."
 msgstr "<strong>Σφάλμα</strong>: Η ηλ. διεύθυνση ανήκει σε άλλο μέλος. Επιλέξτε άλλη διεύθυνση."
 
-#: wp-includes/admin-bar.php:343
-msgid "My Sites"
-msgstr "Οι ιστοχώροι μου"
-
 #: wp-includes/capabilities.php:967
 msgid "Usage of user levels by plugins and themes is deprecated. Use roles and capabilities instead."
 msgstr "Ο ορισμός δικαιωμάτων χρηστών μέσω plugins και θεμάτων είναι παρωχημένος. Αντί αυτών χρησιμοποιείτε ρόλους και δυνατότητες (Roles and Capabilities)."
@@ -6615,10 +6541,14 @@ msgstr "Ιστότοπος"
 msgid "Sites"
 msgstr "Ιστότοποι"
 
-#: wp-includes/class-wp-customize-manager.php:993
+#: wp-includes/class-wp-customize-manager.php:1016
 #: wp-includes/class-wp-xmlrpc-server.php:430
 msgid "Site Title"
 msgstr "Τίτλος ιστότοπου"
+
+#: wp-includes/admin-bar.php:343
+msgid "My Sites"
+msgstr "Οι ιστότοποι μου"
 
 #: wp-includes/user.php:2214
 msgid "<strong>ERROR</strong>: Please enter a username."
@@ -6660,14 +6590,6 @@ msgstr "%1$s στο %2$s"
 #: wp-includes/comment-template.php:1901
 msgid "(Edit)"
 msgstr "(Διόρθωση)"
-
-#: wp-includes/class-pop3.php:143
-msgid "Authentication failed"
-msgstr "Η πιστοποίηση απέτυχε"
-
-#: wp-includes/class-pop3.php:168
-msgid "No login ID submitted"
-msgstr "Δεν υποβλήθηκε ID σύνδεσης"
 
 #: wp-includes/comment-template.php:1475
 msgid "Leave a Comment"
@@ -6855,19 +6777,19 @@ msgstr "Η βιβλιοθήκη GD δεν είναι εγκατεστημένη.
 msgid "Add Media"
 msgstr "Προσθήκη πολυμέσων"
 
-#: wp-includes/class-wp-customize-manager.php:1119
+#: wp-includes/class-wp-customize-manager.php:1142
 #: wp-includes/class-wp-editor.php:952 wp-includes/media-template.php:600
 #: wp-includes/media-template.php:831 wp-includes/media-template.php:897
 msgid "Left"
 msgstr "Αριστερά"
 
-#: wp-includes/class-wp-customize-manager.php:1120
+#: wp-includes/class-wp-customize-manager.php:1143
 #: wp-includes/class-wp-editor.php:953 wp-includes/media-template.php:603
 #: wp-includes/media-template.php:834 wp-includes/media-template.php:900
 msgid "Center"
 msgstr "Κέντρο"
 
-#: wp-includes/class-wp-customize-manager.php:1121
+#: wp-includes/class-wp-customize-manager.php:1144
 #: wp-includes/class-wp-editor.php:954 wp-includes/media-template.php:606
 #: wp-includes/media-template.php:837 wp-includes/media-template.php:903
 msgid "Right"

@@ -21,3 +21,234 @@
 [24-Feb-2015 15:30:13 UTC] PHP Notice:  Use of undefined constant get_stylesheet_directory_uri - assumed 'get_stylesheet_directory_uri' in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 781
 [26-Feb-2015 10:33:51 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
 [26-Feb-2015 10:54:22 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[27-Feb-2015 16:20:31 UTC] PHP Warning:  Παρουσιάστηκε μη αναμενόμενο σφάλμα. Κάτι μπορεί να είναι λάθος με το WordPress.org ή στη διαμόρφωση αυτού του διακομιστή. Εάν εξακολουθείτε να αντιμετωπίζετε προβλήματα, δοκιμάστε τα <a href="https://wordpress.org/support/">φόρουμ υποστήριξης</a>. (Το WordPress δεν κατάφερε να δημιουργήσει μια ασφαλή σύνδεση με το WordPress.org. Παρακαλώ επικοινωνήστε με το διαχειριστή του διακομιστή σας.) in C:\Websites\WP\wp-includes\update.php on line 119
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:20:38 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[27-Feb-2015 16:26:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[02-Mar-2015 07:41:33 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:07 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:14 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:22 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:32 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:43 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:48 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:53 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:41:57 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:42:02 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1165
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1169
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1171
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1172
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:42:35 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\capabilities.php on line 1175
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 10:49:09 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 10:52:43 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 11:02:05 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 11:40:36 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 11:47:20 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:05:09 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:05:43 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:06:04 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:06:13 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:07:39 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:08:56 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:08:57 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:09:04 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:09:35 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:10:06 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:25 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:10:26 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Undefined offset: 0 in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 896
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 896
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Undefined offset: 0 in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 902
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-content\themes\rigel\functions.php on line 902
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:10:29 UTC] PHP Notice:  Trying to get property of non-object in C:\Websites\WP\wp-includes\link-template.php on line 189
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: gallery_id in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: repeat in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 333
+[04-Mar-2015 13:11:08 UTC] PHP Notice:  Undefined index: title in C:\Websites\WP\wp-content\themes\rigel\modules\shortcode_generator.php on line 352
+[04-Mar-2015 13:11:14 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:13:58 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:17:08 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:18:56 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:20:08 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
+[04-Mar-2015 13:22:07 UTC] PHP Notice:  Undefined property: stdClass::$likes in C:\Websites\WP\wp-content\themes\rigel\lib\admin-default.lib.php on line 59
